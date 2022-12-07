@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>СТС</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        
+        <div class="tachographs-top tachographs-top--cards">
+  <div class="container">
+    <ul class="tachographs-top__list">
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">I</span>
+          Оформление карт
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">II</span>
+          Разблокировка карт
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">III</span>
+          Считывание данных
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="tachographs-top__text">
+    <div class="container">
+      <p>
+        <b>Карта водителя</b> – обеспечивает идентификацию и аутентификацию
+        водителя с использованием шифровальных (криптографических) средств, а
+        также хранение данных о деятельности водителя. По законодательству
+        необходимо считывать данные с карт водителя 1 раз в 28 дней и хранить в
+        течение 1 года. Срок эксплуатации карты составляет 3 года.
+      </p>
+      <p>
+        <b>Карта предприятия</b> - обеспечивает идентификацию и аутентификацию
+        владельцев транспортных средств с использованием шифровальных
+        (криптографических) средств, установку блокировки (ограничения) доступа
+        к данным тахографа и данным карт водителей. Срок эксплуатации карты СКЗИ
+        составляет 3 года, ЕСТР 5 лет.
+      </p>
+    </div>
+  </div>
+
+  <div class="tachographs-types">
+    <div class="container">
+      <p class="tachographs-types__text">Существуют 2 вида карт</p>
+      <ul class="tachographs-types__list">
+        <li class="tachographs-types__item">
+          карты для европейских тахографов
+        </li>
+        <li class="tachographs-types__item">
+          карты для российских тахографов с блоком СКЗИ
+        </li>
+      </ul>
+      <p class="tachographs-types__text">Они не взаимозаменяемы.</p>
+    </div>
+  </div>
+</div>
+
+        <section class="cards-difference">
+  <div class="container">
+    <h2 class="cards-difference__title article-title">Отличие карт</h2>
+
+    <ul class="cards-difference__list">
+      <li class="cards-difference__item">
+        Российская карта водителя при начале использования требует ввод PIN
+        кода, в то время как европейские карты этого не требуют.
+      </li>
+      <li class="cards-difference__item">
+        Карты можно отличить по внешнему виду. На российских картах весь текст
+        указан на русском языке, в свою очередь как в европейских картах
+        используется латиница и русский язык.
+      </li>
+    </ul>
+
+    <div class="cards-difference__preview">
+      <picture>
+        <source srcset="img/cards-difference.webp" type="image/webp" />
+        <img src="img/cards-difference.jpg" alt="cards-difference" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+        <section class="cards-design">
+  <div class="container">
+    <h2 class="cards-design__title section-title">I. Оформление карт</h2>
+    <p class="cards-design__text">
+      Для изготовления карты любого типа, требуется личное присутствие заявителя
+      в офисе при оформлении и выдачи карты. Проконсультироваться по вопросу
+      оформлению карт водителя и предприятия можно по телефону 8 (8152)
+      70-19-10.
+    </p>
+    <p class="cards-design__text">
+      <b>Список необходимых документов на карты:</b>
+    </p>
+
+    <div class="cards-design__tabs cards-tabs">
+      <div class="cards-tabs__top">
+        <ul class="cards-tabs__top-list">
+          <li class="cards-tabs__top-item">
+            <button class="cards-tabs__top-btn active" type="button">
+              Карта водителя СКЗИ
+            </button>
+          </li>
+          <li class="cards-tabs__top-item">
+            <button class="cards-tabs__top-btn" type="button">
+              Карта предприятия СКЗИ
+            </button>
+          </li>
+          <li class="cards-tabs__top-item">
+            <button class="cards-tabs__top-btn" type="button">
+              Карта водителя ЕСТР
+            </button>
+          </li>
+          <li class="cards-tabs__top-item">
+            <button class="cards-tabs__top-btn" type="button">
+              Карта предприятия ЕСТР
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="cards-tabs__content active">
+        <div class="cards-tabs__inner">
+          <div class="cards-tabs__left">
+            <ul class="cards-tabs__list">
+              <li class="cards-tabs__item">
+                Фотография заявителя 3.5 х 4.5 см, черно-белая, 1 шт.
+              </li>
+              <li class="cards-tabs__item">
+                Паспорт
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">Регистрация по месту жительства</li>
+              <li class="cards-tabs__item">
+                Водительское удостоверение
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">СНИЛС</li>
+              <li class="cards-tabs__item">ИНН</li>
+              <li class="cards-tabs__item">
+                Карта водителя СКЗИ (если ранее карта на водителя уже
+                выпускалась)
+              </li>
+            </ul>
+            <div class="cards-tabs__bottom">
+              <span>Срок изготовления от 14 до 28 дней</span>
+              <span>СТОИМОСТЬ КАРТЫ 4 000 р.</span>
+              <span>Срок эксплуатации 3 года</span>
+            </div>
+          </div>
+          <div class="cards-tabs__right">
+            <span class="cards-tabs__attention"><b>Внимание!</b></span>
+            <p>
+              При приеме заявления на карту, заявитель подписывает
+              <b>
+                Заявление на изготовление квалифицированного сертификата ключа
+                проверки электронной подписи, который записывается на карту
+                тахографа и используется только там.
+              </b>
+              <br />
+              После получение карты, заявитель подписывает расписку в получении
+              ключа электронной подписи и квалифицированного сертификата ключа
+              проверки электронной подписи, после этого
+              <b>
+                Удостоверяющий центр ООО «Модум» регистрирует данный сертификат
+                в ЕСИА (приходит уведомление на Госуслугах). <br />
+              </b>
+              Требование
+              <span>
+                Федерального закона №63 от 06.04.2011 «Об электронной подписи» </span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards-tabs__content">
+        <div class="cards-tabs__inner">
+          <div class="cards-tabs__left">
+            <ul class="cards-tabs__list">
+              <li class="cards-tabs__item">
+                Фотография заявителя 3.5 х 4.5 см, черно-белая, 1 шт.
+              </li>
+              <li class="cards-tabs__item">
+                Паспорт
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">Регистрация по месту жительства</li>
+              <li class="cards-tabs__item">
+                Водительское удостоверение
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">СНИЛС</li>
+              <li class="cards-tabs__item">ИНН</li>
+              <li class="cards-tabs__item">
+                Карта водителя СКЗИ (если ранее карта на водителя уже
+                выпускалась)
+              </li>
+            </ul>
+            <div class="cards-tabs__bottom">
+              <span>Срок изготовления от 14 до 28 дней</span>
+              <span>СТОИМОСТЬ КАРТЫ 4 000 р.</span>
+              <span>Срок эксплуатации 3 года</span>
+            </div>
+          </div>
+          <div class="cards-tabs__right">
+            <span class="cards-tabs__attention"><b>Внимание!</b></span>
+            <p>
+              При приеме заявления на карту, заявитель подписывает
+              <b>
+                Заявление на изготовление квалифицированного сертификата ключа
+                проверки электронной подписи, который записывается на карту
+                тахографа и используется только там.
+              </b>
+              <br />
+              После получение карты, заявитель подписывает расписку в получении
+              ключа электронной подписи и квалифицированного сертификата ключа
+              проверки электронной подписи, после этого
+              <b>
+                Удостоверяющий центр ООО «Модум» регистрирует данный сертификат
+                в ЕСИА (приходит уведомление на Госуслугах). <br />
+              </b>
+              Требование
+              <span>
+                Федерального закона №63 от 06.04.2011 «Об электронной подписи» </span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards-tabs__content">
+        <div class="cards-tabs__inner">
+          <div class="cards-tabs__left">
+            <ul class="cards-tabs__list">
+              <li class="cards-tabs__item">
+                Фотография заявителя 3.5 х 4.5 см, черно-белая, 1 шт.
+              </li>
+              <li class="cards-tabs__item">
+                Паспорт
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">Регистрация по месту жительства</li>
+              <li class="cards-tabs__item">
+                Водительское удостоверение
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">СНИЛС</li>
+              <li class="cards-tabs__item">ИНН</li>
+              <li class="cards-tabs__item">
+                Карта водителя СКЗИ (если ранее карта на водителя уже
+                выпускалась)
+              </li>
+            </ul>
+            <div class="cards-tabs__bottom">
+              <span>Срок изготовления от 14 до 28 дней</span>
+              <span>СТОИМОСТЬ КАРТЫ 4 000 р.</span>
+              <span>Срок эксплуатации 3 года</span>
+            </div>
+          </div>
+          <div class="cards-tabs__right">
+            <span class="cards-tabs__attention"><b>Внимание!</b></span>
+            <p>
+              При приеме заявления на карту, заявитель подписывает
+              <b>
+                Заявление на изготовление квалифицированного сертификата ключа
+                проверки электронной подписи, который записывается на карту
+                тахографа и используется только там.
+              </b>
+              <br />
+              После получение карты, заявитель подписывает расписку в получении
+              ключа электронной подписи и квалифицированного сертификата ключа
+              проверки электронной подписи, после этого
+              <b>
+                Удостоверяющий центр ООО «Модум» регистрирует данный сертификат
+                в ЕСИА (приходит уведомление на Госуслугах). <br />
+              </b>
+              Требование
+              <span>
+                Федерального закона №63 от 06.04.2011 «Об электронной подписи» </span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cards-tabs__content">
+        <div class="cards-tabs__inner">
+          <div class="cards-tabs__left">
+            <ul class="cards-tabs__list">
+              <li class="cards-tabs__item">
+                Фотография заявителя 3.5 х 4.5 см, черно-белая, 1 шт.
+              </li>
+              <li class="cards-tabs__item">
+                Паспорт
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">Регистрация по месту жительства</li>
+              <li class="cards-tabs__item">
+                Водительское удостоверение
+                <b
+                  >(Для иностранных граждан требуется нотариально заверенный
+                  перевод)</b
+                >
+              </li>
+              <li class="cards-tabs__item">СНИЛС</li>
+              <li class="cards-tabs__item">ИНН</li>
+              <li class="cards-tabs__item">
+                Карта водителя СКЗИ (если ранее карта на водителя уже
+                выпускалась)
+              </li>
+            </ul>
+            <div class="cards-tabs__bottom">
+              <span>Срок изготовления от 14 до 28 дней</span>
+              <span>СТОИМОСТЬ КАРТЫ 4 000 р.</span>
+              <span>Срок эксплуатации 3 года</span>
+            </div>
+          </div>
+          <div class="cards-tabs__right">
+            <span class="cards-tabs__attention"><b>Внимание!</b></span>
+            <p>
+              При приеме заявления на карту, заявитель подписывает
+              <b>
+                Заявление на изготовление квалифицированного сертификата ключа
+                проверки электронной подписи, который записывается на карту
+                тахографа и используется только там.
+              </b>
+              <br />
+              После получение карты, заявитель подписывает расписку в получении
+              ключа электронной подписи и квалифицированного сертификата ключа
+              проверки электронной подписи, после этого
+              <b>
+                Удостоверяющий центр ООО «Модум» регистрирует данный сертификат
+                в ЕСИА (приходит уведомление на Госуслугах). <br />
+              </b>
+              Требование
+              <span>
+                Федерального закона №63 от 06.04.2011 «Об электронной подписи» </span
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="unblocking">
+  <div class="container">
+    <h2 class="unblocking__title section-title">
+      II. Разблокировка российской карты по PIN коду.
+    </h2>
+    <p class="unblocking__text">
+      В случае неверно введенного 3 раза PIN кода, карта блокируется. Для
+      разблокировки карты вы можете обратиться в наш офис. Потребуется:
+    </p>
+
+    <ul class="unblocking__list">
+      <li class="unblocking__item">Паспорт</li>
+      <li class="unblocking__item">Заблокированная карта</li>
+      <li class="unblocking__item">
+        Лист с PIN и PUK кодом (Если лист утерян, необходимо писать заявление на
+        восстановление в нашем офисе)
+      </li>
+    </ul>
+
+    <p class="unblocking__text">
+      <b
+        >Попытки самостоятельно разблокировать карту или ввод PUK кода через
+        тахограф, может привести к полной блокировке карты и как следствие к
+        необходимости ее перевыпуска!</b
+      >
+    </p>
+  </div>
+</section>
+
+        <section class="readings-cards">
+  <div class="container">
+    <div class="readings-cards__wrapper">
+      <div class="readings-cards__left">
+        <h2 class="readings-cards__title section-title">
+          III. Считывание, хранение данных с карт водителя и тахографа
+        </h2>
+
+        <div class="readings-cards__text">
+          <p>
+            Согласно приказу Минтранса РФ от 28 октября 2020 г. №440, необходимо
+            выгружать данные с карт водителя раз в 28 дней, хранить в течение 1
+            года в базах данных владельца транспортного средства и обеспечивать
+            их доступность для проверки контрольными органами.
+          </p>
+          <p>
+            Вы можете считывать данные самостоятельно или в нашем офисе.
+            Сотрудники нашей мастерской помогут вам произвести процедуру
+            считывания данных с учётом всех норм и требований.
+          </p>
+          <p>
+            USB Card Reader на сегодняшний день один из самых дешевых и удобных
+            способов работы с данными карт тахографов. При помощи картридера
+            возможно считать информацию с карты водителя и сохранить ее в
+            необходимом формате. Данная процедура довольно проста: подключаете
+            картридер к компьютеру через USB разъем, устанавливаете программное
+            обеспечение, вставляете карту водителя и начинаете загрузку.
+          </p>
+        </div>
+      </div>
+      <div class="readings-cards__preview">
+        <picture>
+          <source srcset="img/readings-cards.webp" type="image/webp" />
+          <img src="img/readings-cards.jpg" alt="img" />
+        </picture>
+      </div>
+    </div>
+    <div class="readings-cards__text">
+      <p>
+        Доступ к информации, записанной в тахограф, возможен при наличии карты
+        предприятия. Некоторые модели тахографов после установки данной карты,
+        позволяют считать информацию на usb-флешку, а для некоторых моделей
+        необходимо специализированный считыватель.
+      </p>
+      <p>
+        Для самостоятельной выгрузки данных вам понадобится считыватель и
+        специальное программное обеспечение, с помощью которого можно
+        расшифровать и проанализировать выгруженную информацию.
+      </p>
+    </div>
+  </div>
+</section>
+
+        <section class="software">
+  <div class="container">
+    <div class="software__wrapper">
+      <div class="software__left">
+        <h2 class="software__title section-title">
+          Программное обеспечение для расшифровки данных с карт водителя и
+          тахографа
+        </h2>
+
+        <p class="software__text">
+          Программное обеспечение для считывания и просмотра информации с карт
+          может можно скачать по следующим ссылкам.
+        </p>
+
+        <ul class="software__list">
+          <li class="software__item">
+            <b>ШТРИХ-TaxoREPORT</b> - бесплатное ПО, которое позволяет считывать
+            и расшифровывать данные, выгруженные на flash-накопитель из памяти
+            тахографа или карты водителя, а также данные, выгруженные с карты
+            водителя через USB Card Reader. Скачать программу ШТРИХ-TaxoREPORT
+            можно с <a href="#">официального сайта</a> разработчика.
+          </li>
+          <li class="software__item">
+            <b>ПО АТОЛ карты тахографа </b>
+            - бесплатное, обеспечивает считывание всех необходимых данных с
+            карты водителя и их сохранение в специальном архиве. При этом
+            автоматически сохранится детальная информация об используемой карте.
+            Сам же водитель имеет возможность создавать календарь задач, который
+            поможет ему придерживаться установленного рабочего плана, не
+            отставать от графика, вовремя привозя и выгружая все
+            транспортируемые товары. <a href="#">Ссылка</a>.
+          </li>
+        </ul>
+      </div>
+      <div class="software__preview">
+        <picture>
+          <source srcset="img/software-img.webp" type="image/webp" />
+          <img src="img/software-img.jpg" alt="img" />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

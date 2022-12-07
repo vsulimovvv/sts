@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>СТС</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        
+        <div class="tachographs-top">
+  <div class="container">
+    <ul class="tachographs-top__list">
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">I</span>
+          Модели тахографов
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">II</span>
+          Первичная установка тахографа
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">III</span>
+          Замена СКЗИ
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="tachographs-top__text">
+    <div class="container">
+      <p>
+        На ТС, которые эксплуатируются на территории России, устанавливаются
+        только тахографы с модулем СКЗИ (средство криптографической защиты
+        информации). Основная функция которого – сбор, шифрование и хранение
+        информации.
+      </p>
+      <p>
+        Установка тахографа позволит вести запись различных сведений –
+        длительность труда и отдыха водителя, пробег автомобиля, и многое
+        другое. Все полученные с тахографа данные сохранятся в памяти устройства
+        и на карте водителя.
+      </p>
+    </div>
+  </div>
+</div>
+
+        <section class="models-tachographs">
+  <div class="container">
+    <h2 class="models-tachographs__title section-title">
+      I. Модели тахографов
+    </h2>
+
+    <div class="models-tachographs_tabs models-tabs">
+      <div class="models-tabs__left">
+        <ul class="models-tabs__left-list">
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn active" type="button">
+              Атол Drive 5
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              Атол Smart
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              DTCO3283
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              Штрих-TaxoRUS
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              Меркурий ТА-001
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              ТЦА-02НК
+            </button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">Микас</button>
+          </li>
+          <li class="models-tabs__left-item">
+            <button class="models-tabs__left-btn" type="button">
+              Касби Смарт
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="models-tabs__content active">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="models-tabs__content">
+        <article class="tachograph-card">
+          <a class="tachograph-card__top" href="#">
+            <picture>
+              <source srcset="img/tachograph-card.webp" type="image/webp" />
+              <img src="img/tachograph-card.png" alt="equipment" />
+            </picture>
+          </a>
+          <div class="tachograph-card__body">
+            <ul class="tachograph-card__list">
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Организация - изготовитель
+                </div>
+                <div class="tachograph-card__right">ООО "НТЦ "ИЗМЕРИТЕЛЬ"</div>
+              </li>
+              <li class="tachograph-card__item">
+                <div class="tachograph-card__left">
+                  Адрес организации-изготовителя
+                </div>
+                <div class="tachograph-card__right">
+                  115191, г. Москва, Холодильный пер., д. 3, корп. 1, стр. 3,
+                  подъезд 14, этаж 2, помещение IV, комната 20
+                </div>
+              </li>
+            </ul>
+
+            <div class="tachograph-card__bottom">
+              <button class="tachograph-card__btn" type="button">
+                Документация на тахограф
+              </button>
+
+              <div class="tachograph-card__price">
+                <span> 49 500 ₽</span>
+                <picture>
+                  <source srcset="img/wallet.webp" type="image/webp" />
+                  <img class="image" src="img/wallet.png" alt="wallet" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="installation-tachograph">
+  <div class="container">
+    <h2 class="installation-tachograph__title section-title">
+      II. Первичная установка тахографа
+    </h2>
+
+    <ul class="installation-tachograph__list">
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+      <li class="installation-tachograph__item">
+        <a class="btn-anchor-arrow" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">Шаг 1</span>
+            <span class="btn-anchor-arrow__icon"
+              ><svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#2172FF"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание МЧД
+        </a>
+      </li>
+    </ul>
+
+    <article class="creation">
+      <h3 class="creation__title article-title">
+        Создание МЧД (для Юр. лиц и ИП)
+      </h3>
+      <p class="creation__text">
+        Зарегистрироваться на портале ФБУ «Росавтотранс» и создать
+        машиночитаемую доверенность (МЧД).
+      </p>
+      <a class="creation__btn btn" href="#">Скачать инструкцию</a>
+
+      <ol class="creation__list">
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+        <li class="creation-item">
+          <div class="creation-item__count">01</div>
+          <picture>
+            <source srcset="img/creation/1.webp" type="image/webp" />
+            <img
+              class="creation-item__img"
+              src="img/creation/1.png"
+              alt="img"
+              width="38"
+              height="38"
+            />
+          </picture>
+          <p class="creation-item__text">
+            Зарегистрировать личный кабинет предприятия  на портале
+            Автоматизированной информационной системы «Тахографический контроль»
+            (АИС ТК) ФБУ «Росавтотранс» по адресу:
+            <a href="https://portal.rosavtotransport.ru" target="_blank">
+              https://portal.rosavtotransport.ru
+            </a>
+          </p>
+        </li>
+      </ol>
+    </article>
+  </div>
+
+  <article class="transport-survey">
+    <div class="container">
+      <div class="transport-survey__wrapper">
+        <div class="transport-survey_left">
+          <h3 class="transport-survey__title article-title">
+            Обследование транспортного средства
+          </h3>
+          <p class="transport-survey__text">
+            На этом этапе сотрудник мастерской проводит осмотр транспортного
+            средства. Определяется состояние ТС, необходимые работы и
+            оборудование для установки тахографа. Перечень работ согласуется с
+            заказчиком.
+          </p>
+        </div>
+        <div class="transport-survey__preview">
+          <picture>
+            <source srcset="img/transport-survey-img.webp" type="image/webp" />
+            <img src="img/transport-survey-img.jpg" alt="" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="installation-work">
+    <div class="container">
+      <h3 class="installation-work__title article-title">Монтажные работы</h3>
+      <p class="installation-work__text">
+        Работы по монтажу тахографа на каждую модель ТС индивидуальны.
+        Необходимым условием для работы тахографа является подключение его к
+        датчику движения, подключение к постоянному питанию и установку на
+        место, доступное водителю со своего рабочего места.
+      </p>
+    </div>
+  </article>
+
+  <article class="activation">
+    <div class="container">
+      <h3 class="activation__title article-title">
+        Активация и калибровка тахографа
+      </h3>
+      <div class="activation__text">
+        <p>
+          Активацию и тарировку тахографа выполняется только в
+          <span>мастерских</span>, включенных в соответствующие перечни,
+          опубликованные на официальном сайте ФБУ Росавтотранс.
+          <b>
+            Авторизованная тахографическая мастерская СИСТЕМОТЕХНИКА-СЕРВИС,
+            решением Минтранса РФ включена в список действующих мастерских по
+            установке и техническому обслуживанию контрольных устройств
+            (тахографов), а так же имеет лицензию ФСБ на осуществление
+            деятельности, в отношении шифровальных (криптографических) средств
+            (СКЗИ) </b
+          >.
+        </p>
+        <p>
+          Активацию тахографа проводит сотрудник тахографической мастерской по
+          предоставленным документам заказчика:
+        </p>
+      </div>
+
+      <div class="activation__cols">
+        <div class="activation__col">
+          <span class="activation__name">Для юридических лиц</span>
+
+          <ul class="activation__list">
+            <li class="activation__item">Выписка ЕГРЮЛ</li>
+            <li class="activation__item">
+              Cвидетельство о регистрации ТС и ПТС
+            </li>
+            <li class="activation__item">
+              <b>
+                Машиночитаемая доверенность от предприятия на лицо, которое
+                подписывает документы в процессе активации тахографа
+              </b>
+            </li>
+            <li class="activation__item">Паспорт представителя</li>
+            <li class="activation__item">СНИЛС представителя</li>
+            <li class="activation__item">ИНН</li>
+            <li class="activation__item">
+              <b>
+                Согласие на обработку персональных данных представителя от
+                компании
+              </b>
+            </li>
+          </ul>
+        </div>
+        <div class="activation__col">
+          <span class="activation__name">Для юридических лиц</span>
+
+          <ul class="activation__list">
+            <li class="activation__item">Выписка ЕГРЮЛ</li>
+            <li class="activation__item">
+              Cвидетельство о регистрации ТС и ПТС
+            </li>
+            <li class="activation__item">
+              <b>
+                Машиночитаемая доверенность от предприятия на лицо, которое
+                подписывает документы в процессе активации тахографа
+              </b>
+            </li>
+            <li class="activation__item">Паспорт представителя</li>
+            <li class="activation__item">СНИЛС представителя</li>
+            <li class="activation__item">ИНН</li>
+            <li class="activation__item">
+              <b>
+                Согласие на обработку персональных данных представителя от
+                компании
+              </b>
+            </li>
+          </ul>
+        </div>
+        <div class="activation__col">
+          <span class="activation__name">Для юридических лиц</span>
+
+          <ul class="activation__list">
+            <li class="activation__item">Выписка ЕГРЮЛ</li>
+            <li class="activation__item">
+              Cвидетельство о регистрации ТС и ПТС
+            </li>
+            <li class="activation__item">
+              <b>
+                Машиночитаемая доверенность от предприятия на лицо, которое
+                подписывает документы в процессе активации тахографа
+              </b>
+            </li>
+            <li class="activation__item">Паспорт представителя</li>
+            <li class="activation__item">СНИЛС представителя</li>
+            <li class="activation__item">ИНН</li>
+            <li class="activation__item">
+              <b>
+                Согласие на обработку персональных данных представителя от
+                компании
+              </b>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="attention">
+        <span class="attention__name">Внимание!</span>
+        <p class="attention__text">
+          После активации блока СКЗИ в личный кабинет, на портале Госуслуги,
+          доверенному лицу организации, Индивидуальному предпринимателю или
+          владельцу ТС (физическому лицу), придет уведомление о создании
+          сертификата цифровой подписи от Удостоверяющего центра ООО «Модум».
+          Данная подпись используется исключительно в тахографической системе и
+          не может применяться для подписи других документов в соответствии с
+          приказом ФСБ России № 796 от 27 декабря 2011 г. «Об утверждении
+          требований к средствам электронной подписи и требований к средствам
+          удостоверяющего центра».
+        </p>
+      </div>
+    </div>
+  </article>
+
+  <article class="installing-tachograph">
+    <div class="container">
+      <div class="installing-tachograph__wrapper">
+        <div class="installing-tachograph__left">
+          <h3 class="installing-tachograph__title article-title">
+            Установка тахографа
+          </h3>
+          <p class="installing-tachograph__text">
+            Возможны несколько основных сценариев установки тахографа:
+          </p>
+          <ul class="installing-tachograph__list">
+            <li class="installing-tachograph__item">
+              Автомобили на которых ранее не был установлен тахограф. В этом
+              случае будет производиться полный монтаж тахографического
+              оборудования, возможно потребуется замена датчика скорости и
+              спидометра;
+            </li>
+            <li class="installing-tachograph__item">
+              Новых автомобилей без тахографа, но с предподготовкой под
+              тахограф. На них будет произведена проверка смонтированной схемы,
+              установка тахографа;
+            </li>
+            <li class="installing-tachograph__item">
+              Автомобили, оборудованные тахографом европейского образца. Будет
+              необходимо считать параметры установленного оборудования,
+              произвести замену на тахограф российского образца, адаптировать
+              тахограф для работы на ТС.
+            </li>
+          </ul>
+        </div>
+        <div class="installing-tachograph__preview">
+          <picture>
+            <source
+              srcset="img/installing-tachograph-img.webp"
+              type="image/webp"
+            />
+            <img src="img/installing-tachograph-img.jpg" alt="img" />
+          </picture>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="issuance-certificate">
+    <div class="container">
+      <h2 class="issuance-certificate__title article-title">
+        Калибровка, опломбировка, выдача свидетельства
+      </h2>
+      <div class="issuance-certificate__text">
+        <p>
+          Калибровка проводится на полностью оснащенном ТС. До ее начала
+          сотрудник проверяет давление в шинах и глубину протектора. Они должны
+          соответствовать инструкциям завода изготовителя. ТС не менее трех раз
+          прокатывается по специально отведенному участку, с замерами
+          параметров. Установка тахографа завершается проверкой
+          работоспособности тахографа и его опломбированием пломбами с клеймом
+          мастерской. Пломбы устанавливаются на датчик движения, на штатные
+          внешние разъемы тахографа. После этого автомобиль отправляется в
+          тестовую поездку.
+        </p>
+        <p>
+          Полученные данные вносятся в базу данных, выписывается свидетельство о
+          тарировке и делается наклейка с техническими параметрами, которая
+          размещается в доступном месте для контроля на автомобиле (в
+          большинстве случаев это стойка водительской двери).
+        </p>
+      </div>
+
+      <p class="issuance-certificate__warning">
+        Блок СКЗИ рассчитан на работу в течении 3 лет с момента активации. По
+        завершению этого срока, владельцу ТС необходимо обратиться в мастерскую
+        для его деактивации, замены на новый блок, активации блока и калибровки
+        ТС.
+      </p>
+      <p class="issuance-certificate__warning">
+        Для правильной эксплуатации тахографа необходимо, чтобы водитель имел
+        <span>действующую карту</span>. <br />
+        Она нужна для идентификации водителя, ведения учёта режима его работы и
+        отдыха. Эксплуатация тахографа без карт, является нарушением.
+      </p>
+    </div>
+  </article>
+</section>
+
+        <section class="replacement">
+  <div class="container">
+    <h2 class="replacement__title section-title">III. Замена СКЗИ</h2>
+
+    <p class="replacement__text">Блок СКЗИ необходимо заменить:</p>
+
+    <ul class="replacement__list">
+      <li class="replacement__text">
+        • При смене владельца транспортного средства
+      </li>
+      <li class="replacement__text">
+        • По истечению срока жизни блока СКЗИ (3 года с момента активации)
+      </li>
+    </ul>
+
+    <ul class="replacement__btns">
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+      <li class="replacement__btn">
+        <a class="btn-anchor-arrow btn-anchor-arrow--arrow-absolute" href="#">
+          <span class="btn-anchor-arrow__top">
+            <span class="btn-anchor-arrow__count">01</span>
+            <span class="btn-anchor-arrow__icon">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.2891 11.9141L10.6641 17.5391C10.4872 17.7137 10.2486 17.8116 10 17.8116C9.75143 17.8116 9.51286 17.7137 9.33595 17.5391L3.71095 11.9141C3.53483 11.7379 3.43588 11.4991 3.43588 11.25C3.43588 11.0009 3.53483 10.7621 3.71095 10.5859C3.88707 10.4098 4.12594 10.3109 4.37501 10.3109C4.62408 10.3109 4.86295 10.4098 5.03907 10.5859L9.06251 14.6094V3.125C9.06251 2.87636 9.16128 2.6379 9.3371 2.46209C9.51291 2.28627 9.75137 2.1875 10 2.1875C10.2486 2.1875 10.4871 2.28627 10.6629 2.46209C10.8387 2.6379 10.9375 2.87636 10.9375 3.125V14.6094L14.9609 10.5859C15.1371 10.4098 15.3759 10.3109 15.625 10.3109C15.8741 10.3109 16.113 10.4098 16.2891 10.5859C16.4652 10.7621 16.5641 11.0009 16.5641 11.25C16.5641 11.4991 16.4652 11.7379 16.2891 11.9141V11.9141Z"
+                  fill="#a6b0c0"
+                />
+              </svg>
+            </span>
+          </span>
+          Создание <br />
+          МЧД
+        </a>
+      </li>
+    </ul>
+
+    <div class="recalibration">
+      <div class="recalibration__heading">
+       
+          Повторная калибровка <br />
+
+          В случае, если при эксплуатации ТС произошли изменения, влияющие на
+          работу тахографа, такие как:
+    
+      </div>
+      <ul class="recalibration__list">
+        <li class="recalibration__item">
+          • изменения эффективной окружности шин на любом из колес ведущих осей
+          транспортного средства;
+        </li>
+        <li class="recalibration__item">
+          • изменения характеристического коэффициента транспортного средства;
+        </li>
+        <li class="recalibration__item">
+          • изменения идентификационного и (или) государственного
+          регистрационного номера транспортного средства;
+        </li>
+        <li class="recalibration__item">
+          • ремонта тахографа и/или модернизации тахографа;
+        </li>
+        <li class="recalibration__item">• замены блока СКЗИ тахографа;</li>
+        <li class="recalibration__item">• нарушения пломбировки тахографа.</li>
+      </ul>
+      <p class="recalibration__text">
+        то согласно Приказа Минтранса России от 28 октября 2020 г. N 440
+        Приложение N 4, п.6: тахограф необходимо перекалибровать.
+      </p>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

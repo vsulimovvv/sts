@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>СТС</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        
+        <div class="legal">
+  <ul class="legal__list">
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">22 ноября 2016</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title"> Приказ Минтранса России </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Приказ Минтранса России от 22 ноября 2016 г. № 353 «Об утверждении
+              форм запроса физических и юридических лиц о предоставлении
+              информации о координатно-временных параметрах транспортных средств
+              на момент дорожно-транспортных и иных происшествий [...]
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">18 августа 2016</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Постановление Правительства РФ
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Постановление Правительства РФ от 18 августа 2016 г. № 813 «О
+              внесении изменений в Правила информационного взаимодействия
+              оператора Государственной автоматизированной информационной
+              системы «ЭРА-ГЛОНАСС» с обладателями информации и ее
+              пользователями»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">11 марта 2016</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Совместный приказ Минтранса России и МВД России
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Совместный приказ Минтранса России и МВД России от 11.03.2016 №
+              58/119 «Об утверждении Порядка информационного взаимодействия
+              между оператором ГАИС «ЭРА-ГЛОНАСС» и территориальными органами
+              Министерства внутренних дел Российской Федерации» [...]
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">9 марта 2016</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title"> Приказ Минтранса России </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Приказ Минтранса России от 9 марта 2016 № 42 «Об утверждении формы
+              и порядка представления оператором Государственной
+              автоматизированной информационной системы «ЭРА-ГЛОНАСС» ежегодного
+              отчета о ее функционировании»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">1 октября 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Совместный приказ Минтранса России и МЧС России
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Совместный приказ Минтранса России и МЧС России от 01 октября 2015
+              г. № 293/525 «Об утверждении типовой формы соглашения о порядке
+              информационного взаимодействия между оператором Государственной
+              автоматизированной информационной системы [...]
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">4 августа 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">Приказ Минтранса России </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Приказ Минтранса России от 4 августа 2015 г. № 238 «Об утверждении
+              Форматов предоставления информации в Государственную
+              автоматизированную информационную систему «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">13 июля 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title"> Федеральный закон</span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Федеральный закон от 13.07.2015 № 235-ФЗ «О внесении изменений в
+              Федеральный закон «О Государственной автоматизированной
+              информационной системе «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">6 июня 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Постановление Правительства РФ</span
+            >
+            <a class="legal-item__link" href="#" target="_blank">
+              Постановление Правительства РФ от 6 июня 2015 г. № 557 «Об
+              утверждении Правил эксплуатации устройств вызова экстренных
+              оперативных служб и внесении изменений в некоторые акты
+              Правительства Российской Федерации»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">21 февраля 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Совместный приказ Минтранса России и Росреестра
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Совместный приказ Минтранса России и Росреестра от 19.04.2016 №
+              110/П/0181 «Об определении сроков, периодичности и регламента
+              размещения картографической информации в Государственной
+              автоматизированной информационной системе «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">21 февраля 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Постановление Правительства РФ</span
+            >
+            <a class="legal-item__link" href="#" target="_blank">
+              Постановление Правительства Российской Федерации от 21 февраля
+              2015 г. № 151 «О порядке взаимодействия с Государственной
+              автоматизированной информационной системой «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">21 февраля 2015</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Постановление Правительства РФ
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Постановление Правительства Российской Федерации от 26 декабря
+              2014 г. № 1530 «О некоторых вопросах создания и функционирования
+              государственной автоматизированной информационной системы
+              «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">26 декабря 2014</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title">
+              Постановление Правительства РФ
+            </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Постановление Правительства Российской Федерации от 26 декабря
+              2014 г. № 1530 «О некоторых вопросах создания и функционирования
+              государственной автоматизированной информационной системы
+              «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">24 декабря 2014</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title"> Приказ Минтранса России </span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Приказ Минтранса России от 24 декабря 2014 г. № 347 «Об
+              утверждении Требований к техническим, программным, лингвистическим
+              средствам обеспечения эксплуатации Государственной
+              автоматизированной информационной системы «ЭРА-ГЛОНАСС»
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="legal-item">
+      <div class="container">
+        <div class="legal-item__inner">
+          <div class="legal-item__left">28 декабря 2013</div>
+          <div class="legal-item__right">
+            <span class="legal-item__title"> Федеральный закон</span>
+            <a class="legal-item__link" href="#" target="_blank">
+              Федеральный закон от 28.12.2013 № 395-ФЗ «О Государственной
+              автоматизированной информационной системе «ЭРА-ГЛОНАСС
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+      </main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

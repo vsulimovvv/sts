@@ -1,0 +1,54 @@
+<section class="request">
+  <div class="container">
+    <h2 class="request__title section-title">
+      Оставьте заявку или задайте вопрос
+    </h2>
+
+    <form class="request__form form-submit">
+      <div class="form-submit__inner">
+        <div class="form-submit__left">
+          <div class="form-submit__group">
+            <label class="form-submit__label"> Имя Фамилия, Компания</label>
+            <input
+              class="form-submit__input"
+              type="text"
+              placeholder="Введите Имя Фамилию, Название компании"
+              required
+            />
+          </div>
+          <div class="form-submit__group">
+            <label class="form-submit__label"
+              >Контактный телефон, E-mail
+            </label>
+            <input
+              class="form-submit__input"
+              type="text"
+              placeholder="Введите Имя Фамилию, Название компании"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__right">
+          <div class="form-submit__group form-submit__group--big">
+            <label class="form-submit__label">Сообщение</label>
+            <textarea
+              class="form-submit__input"
+              placeholder="Напишите свой вопрос"
+              required
+            ></textarea>
+          </div>
+        </div>
+      </div>
+
+      <label class="form-submit__checkbox checkbox">
+        <input class="checkbox__input" type="checkbox" required />
+        <span class="checkbox__box"></span>
+        <span class="checkbox__text">
+          Я согласен на обработку персональных данных
+          <a href="#">Политика конфиденциальности </a>
+        </span>
+      </label>
+      <button class="form-submit__btn btn" type="submit">Отправить заявку</button>
+    </form>
+  </div>
+</section>
