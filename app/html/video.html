@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        <!-- @include('./components/_hero.html') -->
+        <div class="video-text">
+          <div class="container">
+            Видеонаблюдение на транспорте обеспечивает решение задачи повышения
+            безопасности пассажирских и грузовых перевозок, делает возможным
+            оперативный контроль за действиями водителя и как следствие повышает
+            дисциплину на предприятии. Позволяет выявить причины аварийных
+            ситуаций и предоставляет доказательную базу при происшествиях.
+            Установка систем видеонаблюдения на определенные группы транспортных
+            средств обязательна в рамках действующего
+            <span>законодательства</span>.
+          </div>
+        </div>
+        @include('./components/_vehicle.html')
+        @include('./components/_screen-slider.html')
+        @include('./components/_legal-section.html')
+        @include('./components/_certificates-slider.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->

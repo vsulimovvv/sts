@@ -10,19 +10,19 @@
 Карты для тахографа: https://vsulimovvv.github.io/sts/app/tachograph-cards.html  
 Законодательство: https://vsulimovvv.github.io/sts/app/legal.html  
 Документация и ПО: https://vsulimovvv.github.io/sts/app/docs-tachograph.html  
-ГЛОННАСС: https://vsulimovvv.github.io/sts/app/glonass.html  
+ГЛОННАСС: https://vsulimovvv.github.io/sts/app/glonass.html
 
-Описание Основных направлений: https://vsulimovvv.github.io/sts/app/descr-duration.html  
+Описание Основных направлений: https://vsulimovvv.github.io/sts/app/descr-duration.html
 
 Описание Отраслевых решений: https://vsulimovvv.github.io/sts/app/index.html  
-Описание Оборудования: https://vsulimovvv.github.io/sts/app/index.html  
+
+Описание Оборудования: https://vsulimovvv.github.io/sts/app/equipment-descr.html  
+
 Програмное обеспечение: https://vsulimovvv.github.io/sts/app/index.html  
-ЭРА ГЛОНАСС: https://vsulimovvv.github.io/sts/app/index.html  
+ЭРА ГЛОНАСС: https://vsulimovvv.github.io/sts/app/index.html
 
-Документация: https://vsulimovvv.github.io/sts/app/legal-2.html  
-
-Автономные подогреватели: https://vsulimovvv.github.io/sts/app/index.html  
-Видеонаблюдение: https://vsulimovvv.github.io/sts/app/index.html  
-
+Документация: https://vsulimovvv.github.io/sts/app/legal-2.html
+Автономные подогреватели: https://vsulimovvv.github.io/sts/app/heaters.html  
+Видеонаблюдение: https://vsulimovvv.github.io/sts/app/video.html  
 Контакты: https://vsulimovvv.github.io/sts/app/contacts.html  
-Лицензии и сертификаты: https://vsulimovvv.github.io/sts/app/licenses.html  
+Лицензии и сертификаты: https://vsulimovvv.github.io/sts/app/licenses.html
