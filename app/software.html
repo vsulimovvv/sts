@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>СТС</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--online-booking">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Онлайн запись</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="#">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#f1ebda"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Пункт меню</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+74994990917">
+        +7 (499) 499 09 17
+      </a>
+      <!-- <button class="mobile-menu__btn btn" type="button">Онлайн запись</button> -->
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="container">
+    <div class="header__wrapper"></div>
+  </div>
+</header>
+
+
+      <main class="main">
+        
+        <div class="tachographs-top tachographs-top--software">
+  <div class="container">
+    <p class="tachographs-top__text">
+      Мы имеем возможность обслуживать транспортные средства, подключенные к
+      различным системам мониторинга. При подключении к тому или иному ПО
+      зависит от задач, которые ставит перед собой компания, приоритетных
+      направлений деятельности или иных предпочтений.
+    </p>
+    <ul class="tachographs-top__list">
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">I</span>
+          Wialon
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">II</span>
+          СКАУТ
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">III</span>
+          FORT – MONITOR
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">III</span>
+          OMNICOMM
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+      <li class="tachographs-top__item">
+        <a class="btn-anchor" href="#">
+          <span class="btn-anchor__count">III</span>
+          АСМ ЭРА
+          <span class="btn-anchor__icon">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
+                fill="#2172FF"
+              />
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+        <section class="software-list">
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">ПО Wialon</h2>
+      <p class="software-list__text">
+        Платформа для GPS/ГЛОНАСС мониторинга и IoT, которая позволяет
+        пользователям отслеживать мобильные и стационарные объекты в 130+
+        странах мира. Разрабатывается компанией Gurtam и распространяется через
+        сеть интеграторов систем спутникового мониторинга.
+      </p>
+
+      <div class="software-list__tabs po-tabs wialon-descr">
+        <div class="po-tabs__left">
+          <ul class="po-tabs__left-list">
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn wialon-descr-btn active"
+                type="button"
+              >
+                Большой выбор подключенных устройств
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn wialon-descr-btn" type="button">
+                Стационарный или мобильный мониторинг
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn wialon-descr-btn" type="button">
+                Специализированные приложения
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn wialon-descr-btn" type="button">
+                Общая платформа
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn wialon-descr-btn" type="button">
+                Обучение
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="po-tabs__content wialon-descr-content active">
+          <div class="po-tabs__text">
+            <p>
+              Система мониторинга поддерживает более 2 700 типов модулей
+              мониторинга, трекеров и датчиков. Что обеспечивает большой выбор
+              устройств, которые можно подключить, чтобы решить поставленную
+              заказчиком задачу по мониторингу объектов или завести на нее уже
+              установленное оборудование.
+            </p>
+            <p>
+              Возможно контролировать ТС, спецтехнику, стационарные объекты,
+              людей – можно выбрать наиболее подходящее под задачу оборудование.
+              Подключить дополнительные датчики, специализированные
+              оборудование, управлять процессами и т.д.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content wialon-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Система мониторинга поддерживает более 2 700 типов модулей
+              мониторинга, трекеров и датчиков. Что обеспечивает большой выбор
+              устройств, которые можно подключить, чтобы решить поставленную
+              заказчиком задачу по мониторингу объектов или завести на нее уже
+              установленное оборудование.
+            </p>
+            <p>
+              Возможно контролировать ТС, спецтехнику, стационарные объекты,
+              людей – можно выбрать наиболее подходящее под задачу оборудование.
+              Подключить дополнительные датчики, специализированные
+              оборудование, управлять процессами и т.д.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content wialon-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Система мониторинга поддерживает более 2 700 типов модулей
+              мониторинга, трекеров и датчиков. Что обеспечивает большой выбор
+              устройств, которые можно подключить, чтобы решить поставленную
+              заказчиком задачу по мониторингу объектов или завести на нее уже
+              установленное оборудование.
+            </p>
+            <p>
+              Возможно контролировать ТС, спецтехнику, стационарные объекты,
+              людей – можно выбрать наиболее подходящее под задачу оборудование.
+              Подключить дополнительные датчики, специализированные
+              оборудование, управлять процессами и т.д.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content wialon-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Система мониторинга поддерживает более 2 700 типов модулей
+              мониторинга, трекеров и датчиков. Что обеспечивает большой выбор
+              устройств, которые можно подключить, чтобы решить поставленную
+              заказчиком задачу по мониторингу объектов или завести на нее уже
+              установленное оборудование.
+            </p>
+            <p>
+              Возможно контролировать ТС, спецтехнику, стационарные объекты,
+              людей – можно выбрать наиболее подходящее под задачу оборудование.
+              Подключить дополнительные датчики, специализированные
+              оборудование, управлять процессами и т.д.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content wialon-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Система мониторинга поддерживает более 2 700 типов модулей
+              мониторинга, трекеров и датчиков. Что обеспечивает большой выбор
+              устройств, которые можно подключить, чтобы решить поставленную
+              заказчиком задачу по мониторингу объектов или завести на нее уже
+              установленное оборудование.
+            </p>
+            <p>
+              Возможно контролировать ТС, спецтехнику, стационарные объекты,
+              людей – можно выбрать наиболее подходящее под задачу оборудование.
+              Подключить дополнительные датчики, специализированные
+              оборудование, управлять процессами и т.д.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">
+        Следите за объектами в реальном времени
+      </h2>
+
+      <div class="follow__tabs follow-tabs wialon-screen">
+        <div class="follow-tabs__left">
+          <ul class="follow-tabs__left-list">
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn active"
+                type="button"
+              >
+                Онлайн GPS/ГЛОНАСС мониторинг
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Контроль расхода топлива
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Маршрутизация
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Работа с тахографами
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Анализ параметров датчиков
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Контроль территорий
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Контроль качества вождения
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn wialon-screen-btn"
+                type="button"
+              >
+                Видеомониторинг
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content active">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content wialon-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software-list">
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">ПО СКАУТ</h2>
+      <p class="software-list__text">
+        ГК СКАУТ российская компания разработчик системы спутникового
+        мониторинга транспорта и производитель GPS/ГЛОНАСС оборудования. В
+        линейке оборудования есть блоки мониторинга и датчики уровня топлива. ПО
+        рассчитано на работу как на собственной линейке оборудования, так и по
+        открытому протоколу со сторонним оборудованием и датчиками.
+      </p>
+
+      <div class="software-list__tabs po-tabs scout-descr">
+        <div class="po-tabs__left">
+          <ul class="po-tabs__left-list">
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn scout-descr-btn active"
+                type="button"
+              >
+                ПО для пользователей
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn scout-descr-btn" type="button">
+                Подключаемое оборудование
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn scout-descr-btn" type="button">
+                Обучение
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="po-tabs__content scout-descr-content active">
+          <div class="po-tabs__text">
+            <p>
+              Использует облачную и локальную версию продукта, предлагает
+              несколько вариантов программ для мониторинга объектов.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content scout-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Использует облачную и локальную версию продукта, предлагает
+              несколько вариантов программ для мониторинга объектов.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content scout-descr-content">
+          <div class="po-tabs__text">
+            <p>
+              Использует облачную и локальную версию продукта, предлагает
+              несколько вариантов программ для мониторинга объектов.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="software-list__box">
+    <div class="container">
+      <div class="follow__tabs follow-tabs scout-screen">
+        <div class="follow-tabs__left">
+          <ul class="follow-tabs__left-list">
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn scout-screen-btn active"
+                type="button"
+              >
+                Онлайн контроль за техникой
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn scout-screen-btn"
+                type="button"
+              >
+                Тематические отчеты
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn scout-screen-btn"
+                type="button"
+              >
+                Безопасное вождение
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn scout-screen-btn"
+                type="button"
+              >
+                Подключение своего и стороннего оборудования
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="follow-tabs__content scout-screen-content active">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content scout-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content scout-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content scout-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software-list">
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">ПО FORT – MONITOR</h2>
+      <p class="software-list__text">
+        Облачная программная платформа для спутникового ГЛОНАСС/GPS мониторинга
+        транспорта. Решение полностью web-ориентировано, не требует установки
+        программного обеспечения на компьютер пользователя. Производится как ПО
+        так и оборудования для мониторинга. Производит оборудование для
+        построения сетей IP-видеонаблюдения, оборудование ЭРА-ГЛОНАСС.
+      </p>
+
+      <div class="software-list__tabs po-tabs fort-descr">
+        <div class="po-tabs__left">
+          <ul class="po-tabs__left-list">
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn fort-descr-btn active"
+                type="button"
+              >
+                Характерные особенности ПО
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn fort-descr-btn" type="button">
+                Кейсы по направлениям
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn fort-descr-btn" type="button">
+                Подключаемое оборудование
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button class="po-tabs__left-btn fort-descr-btn" type="button">
+                Дополнительные возможности
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="po-tabs__content fort-descr-content active">
+          <ul>
+            <li>• мониторинг транспорта "в 2 клика";</li>
+            <li>• поддержка терминалов сторонних производителей;</li>
+            <li>• конструктор отчетов;</li>
+            <li>• высокая скорость работы и построения отчетов;</li>
+            <li>• настраиваемая система счетов пользователя;</li>
+            <li>• API для разработчиков.</li>
+          </ul>
+        </div>
+        <div class="po-tabs__content fort-descr-content">
+          <ul>
+            <li>• мониторинг транспорта "в 2 клика";</li>
+            <li>• поддержка терминалов сторонних производителей;</li>
+            <li>• конструктор отчетов;</li>
+            <li>• высокая скорость работы и построения отчетов;</li>
+            <li>• настраиваемая система счетов пользователя;</li>
+            <li>• API для разработчиков.</li>
+          </ul>
+        </div>
+        <div class="po-tabs__content fort-descr-content">
+          <ul>
+            <li>• мониторинг транспорта "в 2 клика";</li>
+            <li>• поддержка терминалов сторонних производителей;</li>
+            <li>• конструктор отчетов;</li>
+            <li>• высокая скорость работы и построения отчетов;</li>
+            <li>• настраиваемая система счетов пользователя;</li>
+            <li>• API для разработчиков.</li>
+          </ul>
+        </div>
+        <div class="po-tabs__content fort-descr-content">
+          <ul>
+            <li>• мониторинг транспорта "в 2 клика";</li>
+            <li>• поддержка терминалов сторонних производителей;</li>
+            <li>• конструктор отчетов;</li>
+            <li>• высокая скорость работы и построения отчетов;</li>
+            <li>• настраиваемая система счетов пользователя;</li>
+            <li>• API для разработчиков.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="software-list__box">
+    <div class="container">
+      <div class="follow__tabs follow-tabs fort-screen">
+        <div class="follow-tabs__left">
+          <ul class="follow-tabs__left-list">
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn active"
+                type="button"
+              >
+                Возможности системы
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn"
+                type="button"
+              >
+                Показания датчиков
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn"
+                type="button"
+              >
+                Различные отчеты
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn"
+                type="button"
+              >
+                Уведомления и предупреждения
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn"
+                type="button"
+              >
+                Фото и видеоконтроль
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn fort-screen-btn"
+                type="button"
+              >
+                Геозоны
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="follow-tabs__content fort-screen-content active">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content fort-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content fort-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content fort-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content fort-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content fort-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software-list">
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">ПО OMNICOMM</h2>
+      <p class="software-list__text">
+        Компания Omnicomm — разработчик и производитель системы мониторинга
+        транспорта Omnicomm на базе технологий ГЛОНАСС/GPS, датчиков уровня
+        топлива Omnicomm LLS и дополнительного оборудования. Компания работает
+        как в России, так и во многих странах мира.
+      </p>
+
+      <div class="software-list__tabs po-tabs omnicomm-descr">
+        <div class="po-tabs__left">
+          <ul class="po-tabs__left-list">
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn omnicomm-descr-btn active"
+                type="button"
+              >
+                Решения по мониторингу
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn omnicomm-descr-btn"
+                type="button"
+              >
+                Основные и дополнительные возможности системы
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn omnicomm-descr-btn"
+                type="button"
+              >
+                Доступность системы мониторинга
+              </button>
+            </li>
+            <li class="po-tabs__left-item">
+              <button
+                class="po-tabs__left-btn omnicomm-descr-btn"
+                type="button"
+              >
+                Опыт работы
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="po-tabs__content omnicomm-descr-content active">
+          <div class="o-tabs__text">
+            <p>
+              Использование неоднократно проверенных стандартных решений для
+              различных отраслей транспорта позволяет точно прогнозировать
+              результат от внедрения системы мониторинга.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content omnicomm-descr-content">
+          <div class="o-tabs__text">
+            <p>
+              Использование неоднократно проверенных стандартных решений для
+              различных отраслей транспорта позволяет точно прогнозировать
+              результат от внедрения системы мониторинга.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content omnicomm-descr-content">
+          <div class="o-tabs__text">
+            <p>
+              Использование неоднократно проверенных стандартных решений для
+              различных отраслей транспорта позволяет точно прогнозировать
+              результат от внедрения системы мониторинга.
+            </p>
+          </div>
+        </div>
+        <div class="po-tabs__content omnicomm-descr-content">
+          <div class="o-tabs__text">
+            <p>
+              Использование неоднократно проверенных стандартных решений для
+              различных отраслей транспорта позволяет точно прогнозировать
+              результат от внедрения системы мониторинга.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="software-list__box">
+    <div class="container">
+      <div class="follow__tabs follow-tabs omnicomm-screen">
+        <div class="follow-tabs__left">
+          <ul class="follow-tabs__left-list">
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn active"
+                type="button"
+              >
+                Контроль расхода топлива
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Контроль геозон
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Контроль маршрутов и местоположения
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Контроль работы техники
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Видеомониторинг
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Поддержка дополнительного оборудования
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Контроль водителей
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn omnicomm-screen-btn"
+                type="button"
+              >
+                Цифровая платформа управления автопарком
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content active">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content omnicomm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="software-list">
+  <div class="software-list__box">
+    <div class="container">
+      <h2 class="software-list__title section-title">ПО АСМ ЭРА</h2>
+      <p class="software-list__text">
+        Это коммерческое ПО системы компании АО «ГЛОНАСС». Согласно ПП №2216
+        данные о ТС категории М2, М3 и перевозящих опасные грузы должны
+        передаваться в систему ЭРА ГЛОНАСС. По заявке владельца ТС он может
+        использовать ПО ЭРА для просмотра данных о ТС в систему ЭРА ГЛОНАСС, так
+        и подключать дополнительные ТС. ПО полностью Российский продукт, который
+        развивается быстрыми темпами.
+      </p>
+    </div>
+  </div>
+
+  <div class="software-list__box">
+    <div class="container">
+      <div class="follow__tabs follow-tabs asm-screen">
+        <div class="follow-tabs__left">
+          <ul class="follow-tabs__left-list">
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn asm-screen-btn active"
+                type="button"
+              >
+                Контроль перемещения транспортных средств.
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn asm-screen-btn"
+                type="button"
+              >
+                Фиксация нарушения скоростного режима.
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn asm-screen-btn"
+                type="button"
+              >
+                Учет фактического расхода топлива с фиксацией заправок и сливов.
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn asm-screen-btn"
+                type="button"
+              >
+                Формирование и учет сложных маршрутов.
+              </button>
+            </li>
+            <li class="follow-tabs__left-item">
+              <button
+                class="follow-tabs__left-btn asm-screen-btn"
+                type="button"
+              >
+                Автоматическое формирование и отправка отчетов по электронной
+                почте и SMS.
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="follow-tabs__content asm-screen-content active">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content asm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content asm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content asm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+        <div class="follow-tabs__content asm-screen-content">
+          <div class="follow-tabs__img">
+            <picture>
+              <source srcset="img/screen-software.webp" type="image/webp" />
+              <img src="img/screen-software.jpg" alt="software" />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container"></div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>
+
+<!-- <label class="checkbox">
+  <input class="checkbox__input" type="checkbox" required />
+  <span class="checkbox__box"></span>
+  <span class="checkbox__text">
+    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
+  </span> 
+</label> -->
