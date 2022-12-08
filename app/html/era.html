@@ -31,8 +31,34 @@
 
       <main class="main">
         @include('./components/_hero-era.html')
-        @include('./components/_about-descr.html')
-        @include('./components/_about-section-descr.html')
+
+        <div class="era-text">
+          <div class="container">
+            <p>
+              Постановлением Правительства РФ от 22.12.2020 № 2216 в целях
+              обеспечения повышения эффективности управления движением
+              транспортных средств и уровня безопасности перевозок пассажиров и
+              опасных грузов утверждены новые Правила оснащения транспортных
+              средств категорий М2, М3 и транспортных средств категории N,
+              используемых для перевозки опасных грузов, аппаратурой спутниковой
+              навигации (АСН).
+            </p>
+            <p>
+              Согласно Правилам, с 1 сентября 2021 г. перевозчики обязаны
+              оснастить АСН транспортные средства указанных категорий и
+              обеспечить передачу данных об их передвижении в Ространснадзор
+              через ГАИС «ЭРА ГЛОНАСС».
+            </p>
+          </div>
+        </div>
+
+        @include('./components/_era-adv.html')
+        @include('./components/_era-scheme.html')
+        @include('./components/_era-install.html')
+        @include('./components/_era-descr.html')
+        @include('./components/_era-payment.html')
+        @include('./components/_era-descr-bg.html')
+        @include('./components/_request-bg.html')
       </main>
       @include('./components/_footer.html')
     </div>
