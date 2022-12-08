@@ -727,6 +727,9 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 150px;
+  left: max(15px, (100% - 1240px) / 2);
 }
 @media (max-width: 1270px) {
   .breadcrumbs {
@@ -734,6 +737,11 @@ body.no-scroll {
         15px + 9 *
           ((100vw - 360px) / 910)
       );
+  }
+}
+@media (max-width: 991.98px) {
+  .breadcrumbs {
+    top: 160px;
   }
 }
 .breadcrumbs__list {
@@ -763,21 +771,21 @@ body.no-scroll {
       -ms-transform: translateY(-50%) rotate(-90deg);
           transform: translateY(-50%) rotate(-90deg);
   right: 0;
-  -webkit-mask: url("../images/icons/chevron-down.svg") no-repeat center/contain;
-          mask: url("../images/icons/chevron-down.svg") no-repeat center/contain;
-  background-color: #c2c2c2;
+  -webkit-mask: url("../img/icons/chevron.svg") no-repeat center/contain;
+          mask: url("../img/icons/chevron.svg") no-repeat center/contain;
+  background-color: var(--color-white);
 }
 .breadcrumbs__link {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   position: relative;
   -webkit-transition: 150ms;
   -o-transition: 150ms;
   transition: 150ms;
-  color: #c2c2c2;
+  color: var(--color-white);
 }
 .breadcrumbs__link:hover {
-  color: var(--color-text);
+  color: var(--color-accent);
 }
 
 .swiper-button-next,
@@ -1615,6 +1623,9 @@ body.no-scroll {
 .header.scroll-header .header__top {
   display: none;
 }
+.header--bg .header__top {
+  background-color: #222e34;
+}
 .header__top {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(5px);
@@ -1656,6 +1667,11 @@ body.no-scroll {
           align-items: center;
   color: var(--color-white);
   margin-right: 10px;
+}
+@media (max-width: 991.98px) {
+  .header .header-btns {
+    display: none;
+  }
 }
 .header .header-btns__name {
   font-size: 14px;
@@ -1886,6 +1902,12 @@ body.no-scroll {
   background-position-x: left;
   text-align: left;
   font-size: 12px;
+  display: none;
+}
+@media (max-width: 991.98px) {
+  .header-drop {
+    display: block;
+  }
 }
 .header-drop::after {
   position: absolute;
@@ -1924,6 +1946,30 @@ body.no-scroll {
   .hero {
     height: auto;
   }
+}
+.hero--small {
+  height: 540px;
+  border-bottom: 1px solid #435768;
+  padding-top: 300px;
+}
+@media (max-width: 1270px) {
+  .hero--small {
+    padding-top: calc(
+        250px + 50 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .hero--small {
+    height: 500px;
+  }
+}
+.hero--w-600 .hero__offer {
+  max-width: 600px;
+}
+.hero--w-620 .hero__offer {
+  max-width: 620px;
 }
 .hero__title {
   line-height: 1.25;

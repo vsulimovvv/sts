@@ -11,8 +11,24 @@
     <div class="site-wrapper">
       @include('./components/_header.html')
 
+
+      <div class="container">
+        <div class="breadcrumbs mt">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">
+                Видеонаблюдение
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <main class="main">
-        <!-- @include('./components/_hero.html') -->
+        @include('./components/_hero-video.html')
         <div class="video-text">
           <div class="container">
             Видеонаблюдение на транспорте обеспечивает решение задачи повышения
@@ -37,10 +53,3 @@
   </body>
 </html>
 
-<!-- <label class="checkbox">
-  <input class="checkbox__input" type="checkbox" required />
-  <span class="checkbox__box"></span>
-  <span class="checkbox__text">
-    Соглашаюсь с<a href="#"> обработкой персональных данных</a>
-  </span> 
-</label> -->

@@ -113,7 +113,7 @@ window.addEventListener('DOMContentLoaded', () => {
   (function fixedHeader() {
     function scrollHeader() {
       const nav = document.querySelector('header');
-      if (this.scrollY >= 90) {
+      if (this.scrollY >= 50) {
         nav.classList.add('scroll-header');
       } else {
         nav.classList.remove('scroll-header');
@@ -125,7 +125,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // ! Change
     function changeBg() {
       const header = document.querySelector('header');
-      if (window.pageYOffset >= 90) {
+      if (window.pageYOffset >= 50) {
         header.classList.add('scroll-header');
       }
     }
