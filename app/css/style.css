@@ -9923,3 +9923,357 @@ body.no-scroll {
 .era-scheme .btn-anchor-arrow:hover {
   background-color: var(--color-accent);
 }
+
+.cities {
+  background-color: var(--color-white);
+  padding-top: 60px;
+  padding-bottom: 75px;
+}
+@media (max-width: 1270px) {
+  .cities {
+    padding-top: calc(
+        40px + 20 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .cities {
+    padding-bottom: calc(
+        40px + 35 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.cities__title {
+  text-align: center;
+}
+.cities .container {
+  padding: 0;
+}
+.cities__map {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+@media (max-width: 991.98px) {
+  .cities__map {
+    height: 860px;
+  }
+}
+.cities__map .simplebar-track {
+  opacity: 0;
+}
+.cities__content {
+  width: 100%;
+  overflow-x: auto;
+}
+@media (max-width: 991.98px) {
+  .cities__content {
+    padding-left: 40px;
+  }
+}
+.cities__img {
+  width: 100%;
+  height: 860px;
+  position: relative;
+  width: 100%;
+}
+@media (max-width: 991.98px) {
+  .cities__img {
+    width: 970px;
+  }
+}
+.cities__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media (max-width: 991.98px) {
+  .cities__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.cities__img .circle {
+  position: absolute;
+  top: 10%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  height: 40px;
+}
+@media (max-width: 991.98px) {
+  .cities__img .circle {
+    height: 35px;
+  }
+}
+.cities__img .circle:hover .map-box {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
+}
+.cities__img .circle__city {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1;
+}
+@media (max-width: 991.98px) {
+  .cities__img .circle__city {
+    font-size: 11px;
+  }
+}
+.cities__img .circle.active .circle__circle, .cities__img .circle:hover .circle__circle {
+  background-color: #ea6425;
+}
+.cities__img .circle.active .circle__circle::after, .cities__img .circle:hover .circle__circle::after {
+  background-color: #ea6425;
+  opacity: 0.4;
+}
+.cities__img .circle.active .circle__circle::before, .cities__img .circle:hover .circle__circle::before {
+  background-color: #ea6425;
+  opacity: 0.2;
+}
+.cities__img .circle__circle {
+  margin-bottom: 10px;
+  width: 9px;
+  height: 9px;
+  background-color: #3c85f1;
+  border-radius: 50%;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  position: relative;
+  margin-bottom: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.cities__img .circle__circle::after, .cities__img .circle__circle::before {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
+  width: 100%;
+  height: 100%;
+}
+.cities__img .circle__circle::after {
+  -webkit-animation: pulse 2000ms 1000ms ease-out infinite;
+          animation: pulse 2000ms 1000ms ease-out infinite;
+  background-color: #3c85f1;
+  opacity: 0.4;
+}
+.cities__img .circle__circle::before {
+  background-color: rgba(60, 133, 241, 0.2);
+  background-color: #3c85f1;
+  opacity: 0.2;
+  -webkit-animation: pulse 2000ms ease-out infinite;
+          animation: pulse 2000ms ease-out infinite;
+}
+.cities__img .circle.nikel {
+  top: 14%;
+  left: 12%;
+}
+.cities__img .circle.zapolyarnyy {
+  top: 12%;
+  left: 14%;
+}
+.cities__img .circle.korzunovo {
+  top: 14%;
+  left: 18%;
+}
+.cities__img .circle.pechenga {
+  top: 10%;
+  left: 20%;
+}
+.cities__img .circle.zaozersk {
+  top: 13%;
+  left: 30%;
+}
+.cities__img .circle.vidyaevo {
+  top: 15%;
+  left: 31%;
+}
+.cities__img .circle.snezhnogorsk {
+  top: 20%;
+  left: 32%;
+}
+.cities__img .circle.polyarnyy {
+  top: 19%;
+  left: 36%;
+}
+.cities__img .circle.severomorsk {
+  top: 22%;
+  left: 37%;
+}
+.cities__img .circle.murmansk {
+  top: 24%;
+  left: 34%;
+}
+.cities__img .circle.tuloma {
+  top: 28%;
+  left: 28%;
+}
+.cities__img .circle.murmashi {
+  top: 29%;
+  left: 32%;
+}
+.cities__img .circle.zversovkhoz {
+  top: 30%;
+  left: 35%;
+}
+.cities__img .circle.verkhnetulomsky {
+  top: 34%;
+  left: 22%;
+}
+.cities__img .circle.tumanny {
+  top: 27%;
+  left: 54%;
+}
+.cities__img .circle.olenegorsk {
+  top: 46%;
+  left: 35%;
+}
+.cities__img .circle.lovozero {
+  top: 50%;
+  left: 49%;
+}
+.cities__img .circle.revda {
+  top: 51%;
+  left: 46%;
+}
+.cities__img .circle.monchegorsk {
+  top: 51%;
+  left: 32%;
+}
+.cities__img .circle.kirovsk {
+  top: 58%;
+  left: 39%;
+}
+.cities__img .circle.apatity {
+  top: 62%;
+  left: 37%;
+}
+.cities__img .circle.polyarnye-zori {
+  top: 66%;
+  left: 30%;
+}
+.cities__img .circle.kandalaksha {
+  top: 69%;
+  left: 28%;
+}
+.cities__img .circle.zelenoborsky {
+  top: 76%;
+  left: 28%;
+}
+.cities__img .circle.kovdor {
+  top: 60%;
+  left: 15%;
+}
+.cities__img .circle.alakurti {
+  top: 74%;
+  left: 13%;
+}
+.cities__img .circle.umba {
+  top: 82%;
+  left: 45%;
+}
+.cities__img .circle.ostrovnoy {
+  top: 49%;
+  left: 84%;
+}
+.cities__img .circle.outside {
+  top: 91%;
+  left: 15%;
+}
+@-webkit-keyframes pulse {
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(5.5);
+            transform: translate(-50%, -50%) scale(5.5);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(5.5);
+            transform: translate(-50%, -50%) scale(5.5);
+    opacity: 0;
+  }
+}
+
+.map-box {
+  width: 155px;
+  padding: 20px;
+  position: absolute;
+  top: -100%;
+  left: -125px;
+  color: #0f0f0f;
+  border-radius: 15px;
+  z-index: 1;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  transition: 500ms ease;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
+  background-image: url("../img/bg-show.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.map-box.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transition-delay: 300ms;
+       -o-transition-delay: 300ms;
+          transition-delay: 300ms;
+}
+.map-box.active .map-box__list {
+  opacity: 1;
+  visibility: visible;
+}
+.map-box .simplebar-scrollbar::before {
+  width: 100%;
+  background-color: #ccebff;
+  opacity: 1;
+}
+.map-box .simplebar-track {
+  background-color: #f2f5f7;
+  width: 6px;
+  opacity: 1;
+}
+.map-box__text {
+  font-size: 15px;
+}
+.map-box__text:not(:last-child) {
+  margin-bottom: 10px;
+}
