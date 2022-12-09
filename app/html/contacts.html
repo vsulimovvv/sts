@@ -11,6 +11,21 @@
     <div class="site-wrapper">
       @include('./components/_header.html')
 
+      <div class="container">
+        <div class="breadcrumbs mt">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <main class="main">
         @include('./components/_hero-contacts.html')
         @include('./components/_team.html')
