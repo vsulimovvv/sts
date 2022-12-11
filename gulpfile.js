@@ -124,6 +124,11 @@ function images() {
     .pipe(dest('app/img'));
 }
 
+// * ===== resources
+const resources = () => {
+  return src(`src/resources/**`).pipe(dest('app/resources'));
+};
+
 // * ===== webpImages
 function webpImages() {
   return src('src/img/**/*.{jpg,jpeg,png}').pipe(webp()).pipe(dest('src/img'));
@@ -139,6 +144,7 @@ function build() {
       'src/js/main.min.js',
       'src/fonts/**',
       'src/img/**/*.*',
+      'src/respurces/*.*',
     ],
     {
       base: 'src',
@@ -158,6 +164,7 @@ function watching() {
   watch(['src/html/**/*.html'], fileInclude);
   watch(['src/**/*.html']).on('change', browserSync.reload);
   watch(['src/img/icons/*.svg'], svgSprites);
+  watch(['src/resources/**'], resources);
   watch(['src/img/**/*.*'], images);
   watch(['src/img/**/*.{jpg,jpeg,png}'], webpImages);
 }
@@ -171,13 +178,15 @@ exports.watching = watching;
 exports.images = images;
 exports.webpImages = webpImages;
 exports.cleanapp = cleanapp;
-exports.build = series(cleanapp, images, webpImages, build);
+exports.resources = resources;
+exports.build = series(cleanapp, resources, images, webpImages, build);
 
 exports.default = parallel(
   fileInclude,
   svgSprites,
   styles,
   scripts,
+  resources,
   images,
   webpImages,
   browsersync,
