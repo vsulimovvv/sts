@@ -65,9 +65,9 @@ window.addEventListener('DOMContentLoaded', () => {
           slidesPerView: 1,
           speed: 800,
           loop: true,
-          autoplay: {
-            delay: 5000,
-          },
+          // autoplay: {
+          //   delay: 5000,
+          // },
           simulateTouch: false,
         });
       }
