@@ -164,9 +164,9 @@ function watching() {
   watch(['src/html/**/*.html'], fileInclude);
   watch(['src/**/*.html']).on('change', browserSync.reload);
   watch(['src/img/icons/*.svg'], svgSprites);
-  watch(['src/resources/**'], resources);
   watch(['src/img/**/*.*'], images);
   watch(['src/img/**/*.{jpg,jpeg,png}'], webpImages);
+  watch(['src/resources/**'], resources);
 }
 
 exports.svgSprites = svgSprites;
@@ -179,16 +179,16 @@ exports.images = images;
 exports.webpImages = webpImages;
 exports.cleanapp = cleanapp;
 exports.resources = resources;
-exports.build = series(cleanapp, resources, images, webpImages, build);
+exports.build = series(cleanapp, images, webpImages, resources, build);
 
 exports.default = parallel(
   fileInclude,
   svgSprites,
   styles,
   scripts,
-  resources,
   images,
   webpImages,
+  resources,
   browsersync,
   watching
 );
