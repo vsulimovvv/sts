@@ -57,34 +57,34 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
   // * ===== Slider
-  (function slider() {
-    const promo = document.querySelectorAll('.promo__slider');
-    promo.forEach((el) => {
-      if (el) {
-        new Swiper(el, {
-          slidesPerView: 1,
-          speed: 800,
-          loop: true,
-          // autoplay: {
-          //   delay: 5000,
-          // },
-          simulateTouch: false,
-        });
-      }
-    });
-  })();
-  // * ===== Slider
-  (function slider() {
-    const promo = document.querySelectorAll('.promo-slider');
-    promo.forEach((el) => {
-      if (el) {
-        new Swiper(el, {
-          slidesPerView: 'auto',
-          spaceBetween: 18,
-        });
-      }
-    });
-  })();
+  // (function slider() {
+  //   const promo = document.querySelectorAll('.promo__slider');
+  //   promo.forEach((el) => {
+  //     if (el) {
+  //       new Swiper(el, {
+  //         slidesPerView: 1,
+  //         speed: 800,
+  //         loop: true,
+  //         // autoplay: {
+  //         //   delay: 5000,
+  //         // },
+  //         simulateTouch: false,
+  //       });
+  //     }
+  //   });
+  // })();
+  // // * ===== Slider
+  // (function slider() {
+  //   const promo = document.querySelectorAll('.promo-slider');
+  //   promo.forEach((el) => {
+  //     if (el) {
+  //       new Swiper(el, {
+  //         slidesPerView: 'auto',
+  //         spaceBetween: 18,
+  //       });
+  //     }
+  //   });
+  // })();
 
   // * ==== Dropdown
   document.addEventListener('click', (e) => {
@@ -126,6 +126,25 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     changeBg();
+  })();
+
+  // * ==== Single Product
+  (function verticalSlider() {
+    let mySwiperNav = new Swiper('#slider-nav', {
+      slidesPerView: 'auto',
+      spaceBetween: 12,
+      direction: 'horizontal',
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+
+    let mySwiper = new Swiper('#slider-main', {
+      spaceBetween: 10,
+      loopedSlides: 4,
+      thumbs: {
+        swiper: mySwiperNav,
+      },
+    });
   })();
 
   // * ===== Show Menu
