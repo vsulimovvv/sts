@@ -708,8 +708,8 @@ body.no-scroll {
 
 .video-text {
   font-size: 17px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--color-white);
 }
 @media (max-width: 1270px) {
@@ -723,7 +723,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .video-text {
     padding-top: calc(
-        40px + 40 *
+        40px + 20 *
           ((100vw - 360px) / 910)
       );
   }
@@ -731,7 +731,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .video-text {
     padding-bottom: calc(
-        40px + 40 *
+        40px + 20 *
           ((100vw - 360px) / 910)
       );
   }
@@ -782,6 +782,19 @@ body.no-scroll {
   .era-text p:not(:last-child) {
     margin-bottom: calc(
         20px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+
+.descr-duration-page {
+  background-color: var(--color-white);
+  padding-bottom: 80px;
+}
+@media (max-width: 1270px) {
+  .descr-duration-page {
+    padding-bottom: calc(
+        40px + 40 *
           ((100vw - 360px) / 910)
       );
   }
@@ -1463,6 +1476,9 @@ body.no-scroll {
 .footer {
   background-color: var(--color-white);
 }
+.footer--border-top {
+  border-top: 1px solid #e3e3e3;
+}
 .footer__wrapper {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -1846,6 +1862,16 @@ body.no-scroll {
     margin-right: auto;
   }
 }
+@media (max-width: 576px) {
+  .header__logo {
+    width: 95px;
+  }
+}
+@media (max-width: 359.98px) {
+  .header__logo {
+    width: 75px;
+  }
+}
 .header__menu {
   margin-right: 20px;
 }
@@ -1873,6 +1899,20 @@ body.no-scroll {
   position: relative;
   border-radius: 5px;
   width: 165px;
+}
+@media (max-width: 576px) {
+  .header__btn {
+    padding: 13px;
+    padding-right: 25px;
+    width: 160px;
+  }
+}
+@media (max-width: 359.98px) {
+  .header__btn {
+    padding: 10px;
+    padding-right: 20px;
+    width: 150px;
+  }
 }
 .header__btn::after {
   position: absolute;
@@ -1967,6 +2007,13 @@ body.no-scroll {
     transition: 350ms ease-in;
     margin-right: 24px;
   }
+}
+@media (max-width: 991.98px) and (max-width: 359.98px) {
+  .header__toggle {
+    margin-right: 15px;
+  }
+}
+@media (max-width: 991.98px) {
   .header__toggle-line {
     border-radius: 3px;
     width: 100%;
@@ -3177,7 +3224,6 @@ body.no-scroll {
   line-height: 1;
   font-weight: 400;
   color: #23262d;
-  padding-left: 30px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3397,6 +3443,17 @@ body.no-scroll {
 }
 .activities--glonass, .activities--equipment {
   background-color: #f6f6f6;
+}
+.activities--glonass .activities__title, .activities--equipment .activities__title {
+  margin-bottom: 45px;
+}
+@media (max-width: 1270px) {
+  .activities--glonass .activities__title, .activities--equipment .activities__title {
+    margin-bottom: calc(
+        30px + 15 *
+          ((100vw - 360px) / 910)
+      );
+  }
 }
 .activities--glonass .activities__list, .activities--equipment .activities__list {
   display: -ms-grid;
@@ -4301,12 +4358,13 @@ body.no-scroll {
   }
 }
 .equipment-card--tachographs .equipment-card__top {
-  height: 200px;
+  width: 90%;
+  height: 180px;
 }
 @media (max-width: 1270px) {
   .equipment-card--tachographs .equipment-card__top {
     height: calc(
-        100px + 100 *
+        100px + 80 *
           ((100vw - 360px) / 910)
       );
   }
@@ -5023,7 +5081,6 @@ body.no-scroll {
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
   gap: 35px;
-  margin-bottom: 50px;
 }
 @media (max-width: 1270px) {
   .tachographs-top__list {
@@ -5040,14 +5097,6 @@ body.no-scroll {
   .tachographs-top__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-  }
-}
-@media (max-width: 1270px) {
-  .tachographs-top__list {
-    margin-bottom: calc(
-        40px + 10 *
-          ((100vw - 360px) / 910)
-      );
   }
 }
 .tachographs-top__text {
@@ -5088,6 +5137,17 @@ body.no-scroll {
 }
 .tachographs-top__text--bg {
   background-color: #f6f6f6;
+}
+.tachographs-top--en .tachographs-top__list {
+  margin-bottom: 60px;
+}
+@media (max-width: 1270px) {
+  .tachographs-top--en .tachographs-top__list {
+    margin-bottom: calc(
+        40px + 20 *
+          ((100vw - 360px) / 910)
+      );
+  }
 }
 .tachographs-top--software .tachographs-top__text {
   padding-top: 0;
@@ -5692,7 +5752,7 @@ body.no-scroll {
   font-size: 17px;
   font-weight: 700;
   color: #23262d;
-  background-color: #dfe7f5;
+  background-color: #dde7f7;
 }
 .tachographs-car .table-tachographs__row:nth-child(1) .table-tachographs__item {
   display: -webkit-box;
@@ -6106,6 +6166,10 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.creation .creation-item__img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .creation .creation-item__text {
   font-weight: 400;
@@ -6721,6 +6785,9 @@ body.no-scroll {
       );
   }
 }
+.replacement__item {
+  margin-bottom: 5px;
+}
 .replacement__list {
   font-size: 17px;
   margin-bottom: 40px;
@@ -6895,14 +6962,21 @@ body.no-scroll {
 }
 .cards-difference__preview {
   width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 .cards-difference__preview img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
   max-height: 545px;
   min-height: 200px;
+  border-radius: 10px;
+}
+@media (max-width: 1270px) {
+  .cards-difference__preview img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 .cards-design {
@@ -7201,12 +7275,12 @@ body.no-scroll {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 @media (max-width: 1270px) {
   .cards-design .cards-tabs__bottom {
     font-size: calc(
-        7px + 7 *
+        7px + 9 *
           ((100vw - 360px) / 910)
       );
   }
@@ -7454,6 +7528,9 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.readings-cards__text a {
+  color: var(--color-accent);
 }
 .readings-cards__text p:not(:last-child) {
   margin-bottom: 30px;
@@ -7747,12 +7824,12 @@ body.no-scroll {
 }
 .docs-tachographs__title {
   font-weight: 600;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 @media (max-width: 1270px) {
   .docs-tachographs__title {
     margin-bottom: calc(
-        40px + 40 *
+        40px + 20 *
           ((100vw - 360px) / 910)
       );
   }
@@ -7777,6 +7854,9 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.docs-tachographs__wrapper:nth-child(1) {
+  padding-bottom: 0;
 }
 .docs-tachographs .docs-tachographs-item {
   padding-top: 60px;
@@ -7944,6 +8024,15 @@ body.no-scroll {
   -ms-grid-columns: 310px 1fr;
   grid-template-columns: 310px 1fr;
   gap: 55px;
+  margin-bottom: 60px;
+}
+@media (max-width: 1270px) {
+  .screen-examples .screen-tabs {
+    margin-bottom: calc(
+        40px + 20 *
+          ((100vw - 360px) / 910)
+      );
+  }
 }
 @media (max-width: 1270px) {
   .screen-examples .screen-tabs {
@@ -7959,7 +8048,6 @@ body.no-scroll {
 }
 .screen-examples .screen-tabs__left {
   width: 100%;
-  background-color: #f6f6f6;
   border-radius: 10px;
   overflow: hidden;
   min-height: 380px;
@@ -7967,7 +8055,7 @@ body.no-scroll {
 @media (max-width: 991.98px) {
   .screen-examples .screen-tabs__left {
     background-color: transparent;
-    margin-bottom: 30px;
+    min-height: auto;
   }
 }
 @media (max-width: 767.98px) {
@@ -7977,6 +8065,8 @@ body.no-scroll {
 }
 .screen-examples .screen-tabs__left-list {
   width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   .screen-examples .screen-tabs__left-list {
@@ -8123,6 +8213,7 @@ body.no-scroll {
 .suggested-equipment {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: var(--color-bg);
 }
 @media (max-width: 1270px) {
   .suggested-equipment {
@@ -8333,7 +8424,7 @@ body.no-scroll {
 .glonass-top {
   background-color: var(--color-white);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
 }
 @media (max-width: 1270px) {
   .glonass-top {
@@ -8346,7 +8437,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .glonass-top {
     padding-bottom: calc(
-        40px + 20 *
+        40px + 40 *
           ((100vw - 360px) / 910)
       );
   }
@@ -8666,8 +8757,8 @@ body.no-scroll {
   }
 }
 .vehicle__title {
-  text-align: center;
   margin-bottom: 60px;
+  text-align: left;
 }
 @media (max-width: 1270px) {
   .vehicle__title {
@@ -8676,6 +8767,9 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.vehicle__title span {
+  color: var(--color-accent);
 }
 .vehicle .vehicle-tabs {
   display: -ms-grid;
@@ -8698,13 +8792,10 @@ body.no-scroll {
 }
 .vehicle .vehicle-tabs__left {
   width: 100%;
-  background-color: var(--color-white);
-  border-radius: 10px;
-  overflow: hidden;
+  background-color: transparent;
 }
 @media (max-width: 991.98px) {
   .vehicle .vehicle-tabs__left {
-    background-color: transparent;
     margin-bottom: 30px;
   }
 }
@@ -8715,6 +8806,8 @@ body.no-scroll {
 }
 .vehicle .vehicle-tabs__left-list {
   width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   .vehicle .vehicle-tabs__left-list {
@@ -8794,6 +8887,7 @@ body.no-scroll {
 .vehicle-card {
   background-color: var(--color-white);
   font-size: 16px;
+  border-radius: 15px;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 40px;
@@ -10370,12 +10464,12 @@ body.no-scroll {
   }
 }
 .era-payment .era-payment-item__text p:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 @media (max-width: 1270px) {
   .era-payment .era-payment-item__text p:not(:last-child) {
     margin-bottom: calc(
-        20px + 10 *
+        15px + 5 *
           ((100vw - 360px) / 910)
       );
   }
