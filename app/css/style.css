@@ -1874,7 +1874,6 @@ body.no-scroll {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   opacity: 0;
   pointer-events: none;
-  border-radius: 8px;
   text-align: left;
   -webkit-transform: translateY(-10px);
       -ms-transform: translateY(-10px);
@@ -2817,7 +2816,7 @@ body.no-scroll {
   background-color: var(--color-white);
   -webkit-box-shadow: 0px 5px 38px 0px rgba(55, 55, 55, 0.21);
           box-shadow: 0px 5px 38px 0px rgba(55, 55, 55, 0.21);
-  border-radius: 10px;
+  border-radius: 2px;
   padding: 20px;
   -webkit-transition: 450ms ease;
   -o-transition: 450ms ease;
@@ -3295,6 +3294,9 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
+}
+.activities--equipment .activities-item__name {
+  color: var(--color-dark);
 }
 
 .activities-item {
