@@ -56,35 +56,6 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
   })();
-  // * ===== Slider
-  // (function slider() {
-  //   const promo = document.querySelectorAll('.promo__slider');
-  //   promo.forEach((el) => {
-  //     if (el) {
-  //       new Swiper(el, {
-  //         slidesPerView: 1,
-  //         speed: 800,
-  //         loop: true,
-  //         // autoplay: {
-  //         //   delay: 5000,
-  //         // },
-  //         simulateTouch: false,
-  //       });
-  //     }
-  //   });
-  // })();
-  // // * ===== Slider
-  // (function slider() {
-  //   const promo = document.querySelectorAll('.promo-slider');
-  //   promo.forEach((el) => {
-  //     if (el) {
-  //       new Swiper(el, {
-  //         slidesPerView: 'auto',
-  //         spaceBetween: 18,
-  //       });
-  //     }
-  //   });
-  // })();
 
   // * ==== Dropdown
   document.addEventListener('click', (e) => {
@@ -141,6 +112,18 @@ window.addEventListener('DOMContentLoaded', () => {
     let mySwiper = new Swiper('#slider-main', {
       spaceBetween: 10,
       loopedSlides: 4,
+      slidesPerView: 'auto',
+      speed: 600,
+      effect: 'fade',
+      // creativeEffect: {
+      //   prev: {
+      //     shadow: false,
+      //     translate: ['0%', 0, -1],
+      //   },
+      //   next: {
+      //     translate: ['100%', 0, 0],
+      //   },
+      // },
       thumbs: {
         swiper: mySwiperNav,
       },
@@ -174,39 +157,39 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  //   // * ===== Modal
-  //   (function modals() {
-  //     function bindModal(openBtn, modal, close) {
-  //       const openBtnEl = document.querySelectorAll(openBtn);
-  //       const modalEl = document.querySelector(modal);
-  //       const closeEl = document.querySelectorAll(close);
-  //       const body = document.querySelector('body');
-  //       if (modalEl) {
-  //         openBtnEl.forEach((el) => {
-  //           el.addEventListener('click', (e) => {
-  //             if (e.target) {
-  //               e.preventDefault();
-  //             }
-  //             modalEl.classList.add('active');
-  //             body.classList.add('no-scroll');
-  //           });
-  //         });
-  //         closeEl.forEach((btn) => {
-  //           btn.addEventListener('click', (e) => {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           });
-  //         });
-  //         modalEl.addEventListener('click', (e) => {
-  //           if (e.target === modalEl) {
-  //             modalEl.classList.remove('active');
-  //             body.classList.remove('no-scroll');
-  //           }
-  //         });
-  //       }
-  //     }
-  //     bindModal('.online-booking-btn', '.popup--online-booking', '.popup__close');
-  //   })();
+    // * ===== Modal
+    (function modals() {
+      function bindModal(openBtn, modal, close) {
+        const openBtnEl = document.querySelectorAll(openBtn);
+        const modalEl = document.querySelector(modal);
+        const closeEl = document.querySelectorAll(close);
+        const body = document.querySelector('body');
+        if (modalEl) {
+          openBtnEl.forEach((el) => {
+            el.addEventListener('click', (e) => {
+              if (e.target) {
+                e.preventDefault();
+              }
+              modalEl.classList.add('active');
+              body.classList.add('no-scroll');
+            });
+          });
+          closeEl.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+              modalEl.classList.remove('active');
+              body.classList.remove('no-scroll');
+            });
+          });
+          modalEl.addEventListener('click', (e) => {
+            if (e.target === modalEl) {
+              modalEl.classList.remove('active');
+              body.classList.remove('no-scroll');
+            }
+          });
+        }
+      }
+      bindModal('.back-call-btn', '.popup--back-call', '.popup__close');
+    })();
 
   // * ===== Toggle Tabs
   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {

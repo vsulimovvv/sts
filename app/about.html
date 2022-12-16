@@ -42,7 +42,7 @@
   </head>
 
   <body>
-    <div class="popup popup--online-booking">
+    <div class="popup popup--back-call">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -50,7 +50,7 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Онлайн запись</h2>
+      <h2 class="popup__title">Оставить заявку</h2>
       <div class="popup__text">
         <p>Оставьте ваши данные и мы вам перезвоним.</p>
       </div>
@@ -82,9 +82,29 @@
             required
           />
         </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel"> Сообщение </label>
+
+          <textarea
+            class="form-submit__input"
+            placeholder="Напишите свой вопрос"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="form-submit__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Я согласен на обработку персональных данных
+              <a href="#">Политика конфиденциальности </a>
+            </span>
+          </label>
+        </div>
 
         <button class="form-submit__btn btn" type="button">
-          Заказать звонок
+          Оставить заявку
         </button>
       </form>
     </div>
@@ -208,7 +228,7 @@
             </li>
           </ul>
         </div>
-        <a class="header__phone" href="+78152701960">+7 (8152) 70-19-60</a>
+        <a class="header__phone" href="tel:+78152701960">Т. +7 (8152) 70-19-60</a>
       </div>
     </div>
   </div>
@@ -226,7 +246,9 @@
             <a class="menu__link" href="about.html">О компании</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link menu__link--dropdown" href="tachographs.html"> Тахографы </a>
+            <a class="menu__link menu__link--dropdown" href="tachographs.html">
+              Тахографы
+            </a>
 
             <div class="dropmenu">
               <ul class="dropmenu__list">
@@ -296,28 +318,17 @@
             <a class="menu__link" href="video.html">Видеонаблюдение</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="heaters.html">Автономные подогреватели</a>
+            <a class="menu__link" href="heaters.html"
+              >Автономные подогреватели</a
+            >
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contacts.html">Контакты</a>
           </li>
         </ul>
       </nav>
-      <button class="header__btn btn" type="button">
+      <button class="header__btn btn back-call-btn" type="button">
         Отправить заявку
-
-        <div class="dropmenu">
-          <ul class="dropmenu__list">
-            <li class="dropmenu__item">
-              <a class="dropmenu__link" href="#"> Не отправлять заявку</a>
-            </li>
-            <li class="dropmenu__item">
-              <a class="dropmenu__link" href="#">
-                Нет, все таки отправить заявку</a
-              >
-            </li>
-          </ul>
-        </div>
       </button>
     </div>
   </div>
@@ -353,35 +364,7 @@
   </div>
 </section>
 
-        <div class="about-descr">
-  <div class="container">
-    <p class="about-descr__text">
-      Общество с ограниченной ответственностью «СИСТЕМОТЕХНИКА-СЕРВИС» основано
-      в 1998 году. <br />
-      Мы работаем по следующим направлениям:
-    </p>
-
-    <ul class="about-descr__list">
-      <li class="about-descr__item">ГЛОНАСС/GPS мониторинг транспорта</li>
-      <li class="about-descr__item">Контроль расхода топлива</li>
-      <li class="about-descr__item">
-        Подключение к ГАИС «ЭРА-ГЛОНАСС» (ПП2216)
-      </li>
-      <li class="about-descr__item">Спутниковый мониторинг судов</li>
-      <li class="about-descr__item">
-        Монтаж, сопровождение и ремонт тахографического оборудования
-      </li>
-      <li class="about-descr__item">Оформление карт водителя для тахографа</li>
-      <li class="about-descr__item">
-        Установка и ремонт автономных подогревателей
-      </li>
-      <li class="about-descr__item">
-        Установка и сопровождение систем видеонаблюдения на транспорте
-      </li>
-    </ul>
-  </div>
-</div>
-
+        
         <section class="descr-section">
   <div class="container">
     <div class="descr-section__wrapper">
@@ -389,7 +372,7 @@
         <p>
           На сегодняшний день наша организация производит все виды работ с
           тахографическим и навигационным оборудованием всех наименований, в том
-          числе ранее установленного и используемого на автомобилях различных
+          числе ранее установленным и используемым на автомобилях различных
           моделей.
         </p>
         <p>
