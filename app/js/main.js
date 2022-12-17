@@ -5,6 +5,18 @@ window.addEventListener('DOMContentLoaded', () => {
   //   // * ===== Nice Select
   //   // $('select').niceSelect();
 
+  // * ===== Scroll anchor
+  $(document).ready(function () {
+    $('a[href*="#"]').bind('click', function (e) {
+      var anchor = $(this);
+      $('html, body').animate({
+        scrollTop: $(anchor.attr('href')).offset().top - 120,
+      });
+      e.preventDefault();
+    });
+    return false;
+  });
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.news__slider');
@@ -157,39 +169,39 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-    // * ===== Modal
-    (function modals() {
-      function bindModal(openBtn, modal, close) {
-        const openBtnEl = document.querySelectorAll(openBtn);
-        const modalEl = document.querySelector(modal);
-        const closeEl = document.querySelectorAll(close);
-        const body = document.querySelector('body');
-        if (modalEl) {
-          openBtnEl.forEach((el) => {
-            el.addEventListener('click', (e) => {
-              if (e.target) {
-                e.preventDefault();
-              }
-              modalEl.classList.add('active');
-              body.classList.add('no-scroll');
-            });
-          });
-          closeEl.forEach((btn) => {
-            btn.addEventListener('click', (e) => {
-              modalEl.classList.remove('active');
-              body.classList.remove('no-scroll');
-            });
-          });
-          modalEl.addEventListener('click', (e) => {
-            if (e.target === modalEl) {
-              modalEl.classList.remove('active');
-              body.classList.remove('no-scroll');
+  // * ===== Modal
+  (function modals() {
+    function bindModal(openBtn, modal, close) {
+      const openBtnEl = document.querySelectorAll(openBtn);
+      const modalEl = document.querySelector(modal);
+      const closeEl = document.querySelectorAll(close);
+      const body = document.querySelector('body');
+      if (modalEl) {
+        openBtnEl.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            if (e.target) {
+              e.preventDefault();
             }
+            modalEl.classList.add('active');
+            body.classList.add('no-scroll');
           });
-        }
+        });
+        closeEl.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          });
+        });
+        modalEl.addEventListener('click', (e) => {
+          if (e.target === modalEl) {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          }
+        });
       }
-      bindModal('.back-call-btn', '.popup--back-call', '.popup__close');
-    })();
+    }
+    bindModal('.back-call-btn', '.popup--back-call', '.popup__close');
+  })();
 
   // * ===== Toggle Tabs
   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
