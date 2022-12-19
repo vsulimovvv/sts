@@ -6021,8 +6021,8 @@ body.no-scroll {
 .installation-tachograph__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
   gap: 12px;
   margin-bottom: 80px;
 }
@@ -6851,6 +6851,19 @@ body.no-scroll {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.replacement .btn-anchor-arrow {
+  cursor: initial;
+}
+.replacement .btn-anchor-arrow:hover {
+  background-color: #dfe7f5;
+  color: #23262d;
+}
+.replacement .btn-anchor-arrow:hover .btn-anchor-arrow__icon {
+  background-color: #eef3fc;
+}
+.replacement .btn-anchor-arrow:hover .btn-anchor-arrow__icon svg path {
+  fill: #a6b0c0;
+}
 .replacement .recalibration {
   font-size: 17px;
 }
@@ -7591,7 +7604,7 @@ body.no-scroll {
 }
 .readings-cards__text {
   margin-bottom: 35px;
-  font-size: 15px;
+  font-size: 17px;
 }
 @media (max-width: 1270px) {
   .readings-cards__text {
@@ -7604,13 +7617,16 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .readings-cards__text {
     font-size: calc(
-        15px + 0 *
+        15px + 2 *
           ((100vw - 360px) / 910)
       );
   }
 }
 .readings-cards__text a {
   color: var(--color-accent);
+}
+.readings-cards__text a:hover {
+  text-decoration: underline;
 }
 .readings-cards__text p:not(:last-child) {
   margin-bottom: 30px;
@@ -7677,6 +7693,7 @@ body.no-scroll {
 .software {
   padding-top: 80px;
   padding-bottom: 80px;
+  font-size: 17px;
 }
 @media (max-width: 1270px) {
   .software {
@@ -7690,6 +7707,14 @@ body.no-scroll {
   .software {
     padding-bottom: calc(
         40px + 40 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .software {
+    font-size: calc(
+        15px + 2 *
           ((100vw - 360px) / 910)
       );
   }
@@ -7758,6 +7783,9 @@ body.no-scroll {
 }
 .software__item a {
   color: var(--color-accent);
+}
+.software__item a:hover {
+  text-decoration: underline;
 }
 .software__item:not(:last-child) {
   margin-bottom: 30px;
