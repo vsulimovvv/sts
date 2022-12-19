@@ -6850,6 +6850,17 @@ body.no-scroll {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.replacement .recalibration {
+  font-size: 17px;
+}
+@media (max-width: 1270px) {
+  .replacement .recalibration {
+    font-size: calc(
+        15px + 2 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
 .replacement .recalibration__heading {
   font-size: 20px;
   margin-bottom: 40px;
