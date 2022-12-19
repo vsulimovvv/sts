@@ -6815,8 +6815,8 @@ body.no-scroll {
 .replacement__btns {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[7];
-  grid-template-columns: repeat(7, 1fr);
+  -ms-grid-columns: (1fr)[6];
+  grid-template-columns: repeat(6, 1fr);
   gap: 25px;
   margin-bottom: 50px;
 }
@@ -6850,6 +6850,9 @@ body.no-scroll {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.replacement__btn:last-child .btn-anchor-arrow__icon {
+  display: none;
 }
 .replacement .btn-anchor-arrow {
   cursor: initial;
