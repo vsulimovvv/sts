@@ -800,6 +800,100 @@ body.no-scroll {
   }
 }
 
+.dropmenu {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 120px;
+  background-color: var(--color-white);
+  padding: 30px 25px;
+  -webkit-transition: 450ms ease;
+  -o-transition: 450ms ease;
+  transition: 450ms ease;
+  -webkit-transition-delay: 150ms;
+       -o-transition-delay: 150ms;
+          transition-delay: 150ms;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+  opacity: 0;
+  visibility: hidden;
+}
+@media (max-width: 991.98px) {
+  .dropmenu {
+    display: none;
+  }
+}
+.dropmenu.active {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.dropmenu:hover {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+.dropmenu__name {
+  font-size: 15px;
+  line-height: 1;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  display: block;
+}
+.dropmenu__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.dropmenu__link {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 300;
+  color: var(--color-dark);
+  -webkit-transition: 150ms ease;
+  -o-transition: 150ms ease;
+  transition: 150ms ease;
+}
+.dropmenu__link:hover {
+  color: var(--color-04);
+}
+.dropmenu__all {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--color-dark);
+}
+.dropmenu__img {
+  width: 470px;
+  height: 100%;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+@media (max-width: 1270px) {
+  .dropmenu__img {
+    width: calc(350px + 120 * (100vw - 991px) / 284);
+  }
+}
+.dropmenu__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @-webkit-keyframes opacity-visibility-translate-y {
   0% {
     opacity: 0;
@@ -1601,21 +1695,24 @@ body.no-scroll {
   z-index: 10;
   position: fixed;
   border-bottom: 1px solid #414b4c;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
 }
 .header.scroll-header {
   -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   background-color: var(--color-dark);
   border-bottom: transparent;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
 }
 .header.scroll-header .header__bottom {
   padding: 10px 0;
 }
 .header.scroll-header .header__logo {
   height: 40px;
-}
-.header.scroll-header .header__btn {
-  padding: 8px;
 }
 .header--bg .header__top {
   background-color: #222e34;
@@ -1625,6 +1722,9 @@ body.no-scroll {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   padding: 10px 0;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
 }
 .header__top-inner {
   display: -webkit-box;
@@ -1850,6 +1950,9 @@ body.no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 20px 0;
+  -webkit-transition: 200ms ease;
+  -o-transition: 200ms ease;
+  transition: 200ms ease;
 }
 .header__btn {
   padding: 15px;
@@ -2306,11 +2409,21 @@ body.no-scroll {
   -webkit-backdrop-filter: blur(2px);
           backdrop-filter: blur(2px);
   width: 175px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 14px;
+  height: 110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 @media (max-width: 1270px) {
   .promo .slider-thumbs .slider-nav__slide {
@@ -2323,7 +2436,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .promo .slider-thumbs .slider-nav__slide {
     padding-left: calc(
-        8px + 2 *
+        5px + 0 *
           ((100vw - 360px) / 910)
       );
   }
@@ -2331,7 +2444,7 @@ body.no-scroll {
 @media (max-width: 1270px) {
   .promo .slider-thumbs .slider-nav__slide {
     padding-right: calc(
-        8px + 2 *
+        5px + 0 *
           ((100vw - 360px) / 910)
       );
   }

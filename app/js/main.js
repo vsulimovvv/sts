@@ -17,6 +17,48 @@ window.addEventListener('DOMContentLoaded', () => {
     return false;
   });
 
+  (function showDropdown() {
+    const links = document.querySelectorAll('.menu__link');
+    const dropdowns = document.querySelectorAll('.dropmenu');
+
+    links.forEach((link) => {
+      if (link) {
+        link.addEventListener('mouseover', (e) => {
+          dropdowns.forEach((dropdown) => {
+            console.log(dropdown.dataset.target);
+
+            if (link.dataset.target === dropdown.dataset.target) {
+              dropdown.classList.toggle('active');
+            }
+          });
+        });
+        link.addEventListener('mouseleave', (e) => {
+          dropdowns.forEach((dropdown) => {
+            dropdown.classList.remove('active');
+          });
+        });
+      }
+    });
+  })();
+
+  // (function scrolAnchor() {
+  //   $('a').on('click', function () {
+  //     let href = $(this).attr('href');
+
+  //     $('html, body').animate(
+  //       {
+  //         scrollTop: $(href).offset().top - 120,
+  //       },
+  //       {
+  //         duration: 500, // по умолчанию «400»
+  //         easing: 'linear', // по умолчанию «swing»
+  //       }
+  //     );
+
+  //     return false;
+  //   });
+  // })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.news__slider');
@@ -119,6 +161,18 @@ window.addEventListener('DOMContentLoaded', () => {
       direction: 'horizontal',
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
+
+      allowTouchMove: false,
+
+      breakpoints: {
+        300: {
+          allowTouchMove: true,
+        },
+
+        768: {
+          allowTouchMove: false,
+        },
+      },
     });
 
     let mySwiper = new Swiper('#slider-main', {
@@ -127,15 +181,7 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 'auto',
       speed: 600,
       effect: 'fade',
-      // creativeEffect: {
-      //   prev: {
-      //     shadow: false,
-      //     translate: ['0%', 0, -1],
-      //   },
-      //   next: {
-      //     translate: ['100%', 0, 0],
-      //   },
-      // },
+
       thumbs: {
         swiper: mySwiperNav,
       },
