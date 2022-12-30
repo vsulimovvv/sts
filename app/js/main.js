@@ -178,8 +178,8 @@ window.addEventListener('DOMContentLoaded', () => {
     let mySwiper = new Swiper('#slider-main', {
       spaceBetween: 10,
       loopedSlides: 4,
-      slidesPerView: 'auto',
-      speed: 600,
+      slidesPerView: 1,
+      speed: 500,
       effect: 'fade',
 
       thumbs: {
