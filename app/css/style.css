@@ -736,7 +736,7 @@ body.no-scroll {
       );
   }
 }
-.video-text span {
+.video-text a {
   color: var(--color-accent);
 }
 
@@ -1097,6 +1097,7 @@ body.no-scroll {
 }
 .checkbox__text a {
   color: var(--color-accent);
+  margin-left: 5px;
 }
 
 .choices {
@@ -1584,9 +1585,6 @@ body.no-scroll {
       );
   }
 }
-.footer__phone:hover {
-  color: var(--color-accent);
-}
 .footer__phone::after {
   position: absolute;
   content: "";
@@ -1619,9 +1617,6 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
-}
-.footer__phone span {
-  color: var(--color-accent);
 }
 .footer__bottom {
   border-top: 1px solid #e3e3e3;
@@ -1802,12 +1797,6 @@ body.no-scroll {
           ((100vw - 360px) / 910)
       );
   }
-}
-.header__phone:hover {
-  color: var(--color-accent);
-}
-.header__phone:hover::after {
-  background-color: var(--color-accent);
 }
 .header .header-btns {
   font-size: 14px;
@@ -4079,7 +4068,7 @@ body.no-scroll {
 .about-section__text p:not(:last-child) {
   margin-bottom: 20px;
 }
-.about-section__text span {
+.about-section__text a {
   color: var(--color-accent);
 }
 .about-section__btn {
@@ -4980,6 +4969,31 @@ body.no-scroll {
   -webkit-animation: opacity-visibility-translate-y 700ms ease forwards;
           animation: opacity-visibility-translate-y 700ms ease forwards;
 }
+.team .team-tabs__item--all {
+  height: 100%;
+  width: 100%;
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+@media (max-width: 767.98px) {
+  .team .team-tabs__item--all {
+    height: 500px;
+  }
+}
+@media (max-width: 767.98px) and (max-width: 1270px) {
+  .team .team-tabs__item--all {
+    height: calc(
+        200px + 300 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.team .team-tabs__item--all img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .team-card {
   display: -webkit-box;
@@ -5233,7 +5247,7 @@ body.no-scroll {
       );
   }
 }
-.tachographs-top__text span {
+.tachographs-top__text a {
   color: var(--color-accent);
   font-weight: 700;
 }
@@ -5335,7 +5349,7 @@ body.no-scroll {
       );
   }
 }
-.tachographs-text__text span {
+.tachographs-text__text a {
   color: var(--color-accent);
 }
 .tachographs-text__text p:not(:last-child) {
@@ -6511,7 +6525,7 @@ body.no-scroll {
 .activation__text p:not(:last-child) {
   margin-bottom: 20px;
 }
-.activation__text span {
+.activation__text a {
   color: var(--color-accent);
 }
 .activation__cols {
@@ -6815,7 +6829,7 @@ body.no-scroll {
   background-position: center;
   background-size: contain;
 }
-.issuance-certificate__warning span {
+.issuance-certificate__warning a {
   color: var(--color-accent);
 }
 .issuance-certificate__warning:not(:last-child) {
@@ -10829,7 +10843,16 @@ body.no-scroll {
   padding: 7px 14px;
 }
 .era-scheme .btn-anchor-arrow:hover {
-  background-color: var(--color-accent);
+  color: inherit;
+}
+.era-scheme .btn-anchor-arrow:hover span {
+  color: inherit;
+}
+.era-scheme .btn-anchor-arrow:hover .btn-anchor-arrow__icon {
+  background-color: #ecf1f8;
+}
+.era-scheme .btn-anchor-arrow:hover .btn-anchor-arrow__icon svg path {
+  fill: var(--color-accent);
 }
 
 .cities {
