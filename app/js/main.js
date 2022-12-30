@@ -179,7 +179,7 @@ window.addEventListener('DOMContentLoaded', () => {
       spaceBetween: 10,
       loopedSlides: 4,
       slidesPerView: 1,
-      speed: 500,
+      speed: 300,
       effect: 'fade',
 
       thumbs: {
