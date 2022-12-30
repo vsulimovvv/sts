@@ -9828,6 +9828,11 @@ body.no-scroll {
   grid-template-columns: auto 1fr;
   gap: 45px;
 }
+.software-list .po-tabs__els {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
 @media (max-width: 1270px) {
   .software-list .po-tabs {
     gap: 30px;
@@ -9842,7 +9847,6 @@ body.no-scroll {
 }
 .software-list .po-tabs__left {
   width: 100%;
-  background-color: var(--color-white);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -9859,6 +9863,9 @@ body.no-scroll {
 }
 .software-list .po-tabs__left-list {
   width: 100%;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  overflow: hidden;
 }
 @media (max-width: 991.98px) {
   .software-list .po-tabs__left-list {
