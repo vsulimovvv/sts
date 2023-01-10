@@ -3076,8 +3076,12 @@ body.no-scroll {
 }
 .dropmenu--glonass .dropmenu__col--right img {
   min-width: 72px;
+  max-width: 72px;
   height: 72px;
   margin-right: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
 }
 .dropmenu--glonass .dropmenu__list {
   display: block;
@@ -4960,23 +4964,35 @@ body.no-scroll {
 .team .team-tabs__item--all {
   height: 100%;
   width: 100%;
-  -ms-grid-column-span: 2;
-  grid-column: span 2;
+  -ms-grid-column-span: 4;
+  grid-column: span 4;
 }
 .team .team-tabs__item--all .team-card__top {
-  height: 360px;
+  height: 700px;
 }
 @media (max-width: 767.98px) {
   .team .team-tabs__item--all .team-card__top {
-    height: 360px;
+    height: 700px;
   }
 }
 @media (max-width: 767.98px) and (max-width: 1270px) {
   .team .team-tabs__item--all .team-card__top {
     height: calc(
-        260px + 100 *
+        260px + 440 *
           ((100vw - 360px) / 910)
       );
+  }
+}
+@media (max-width: 991.98px) {
+  .team .team-tabs__item--all {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+  }
+}
+@media (max-width: 767.98px) {
+  .team .team-tabs__item--all {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 }
 .team .team-tabs__item--all img {
@@ -8443,6 +8459,7 @@ body.no-scroll {
   max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  cursor: pointer;
 }
 
 .suggested-equipment {
@@ -8811,6 +8828,7 @@ body.no-scroll {
   padding: 10px;
   max-width: 535px;
   width: 100%;
+  cursor: pointer;
   height: 365px;
 }
 @media (max-width: 1270px) {
@@ -10158,6 +10176,7 @@ body.no-scroll {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 20px;
+  cursor: pointer;
 }
 @media (max-width: 1270px) {
   .software-list .follow-tabs__img {

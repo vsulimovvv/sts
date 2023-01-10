@@ -69,6 +69,18 @@
           />
         </div>
         <div class="form-submit__group">
+          <label class="form-submit__label" for="online-email">E-mail</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-email"
+            type="email"
+            placeholder="Введите ваш e-mail"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
           <label class="form-submit__label" for="online-tel">
             Контактный телефон
           </label>
@@ -83,11 +95,12 @@
           />
         </div>
         <div class="form-submit__group">
-          <label class="form-submit__label" for="online-tel"> Сообщение </label>
+          <label class="form-submit__label" for="online-mes"> Сообщение </label>
 
           <textarea
             class="form-submit__input"
             placeholder="Напишите свой вопрос"
+            id="online-mes"
             required
           ></textarea>
         </div>
@@ -260,6 +273,9 @@
             </a>
           </li>
           <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#"> Контроль местоположения </a>
+          </li>
+          <li class="dropmenu__item">
             <a class="dropmenu__link" href="#"> Контроль топлива </a>
           </li>
           <li class="dropmenu__item">
@@ -273,15 +289,6 @@
           </li>
           <li class="dropmenu__item">
             <a class="dropmenu__link" href="#">Контроль водителей </a>
-          </li>
-          <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Спутниковая навигация </a>
-          </li>
-          <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Он-лайн табло </a>
-          </li>
-          <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Сохранность груза</a>
           </li>
         </ul>
       </div>
@@ -302,22 +309,22 @@
             <a class="dropmenu__link" href="#">Грузоперевозки</a>
           </li>
           <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Пассажироперевозки</a>
+          </li>
+          <li class="dropmenu__item">
             <a class="dropmenu__link" href="#">Спецтехника</a>
           </li>
           <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Пассажирский транспорт</a>
+            <a class="dropmenu__link" href="#">Стационарные объекты</a>
           </li>
           <li class="dropmenu__item">
             <a class="dropmenu__link" href="#">Легковой транспорт</a>
           </li>
           <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Маломерные суда</a>
-          </li>
-          <li class="dropmenu__item">
             <a class="dropmenu__link" href="#">Персональный мониторинг</a>
           </li>
           <li class="dropmenu__item">
-            <a class="dropmenu__link" href="#">Стационарные объекты</a>
+            <a class="dropmenu__link" href="#">Маломерные суда</a>
           </li>
         </ul>
       </div>
@@ -334,6 +341,19 @@
               </picture>
 
               <b>ЭРА ГЛОНАСС (ПП№2216)</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="legal.html">
+              <picture>
+                <source
+                  srcset="img/dropmenu-glonass/6.webp"
+                  type="image/webp"
+                />
+                <img src="img/dropmenu-glonass/6.jpg" alt="img" />
+              </picture>
+
+              <b>Онлайн-табло</b>
             </a>
           </li>
           <li class="dropmenu__item">
@@ -550,51 +570,7 @@
   </div>
 </section>
 
-        <div class="contacts-top">
-  <div class="container">
-    <ul class="contacts-top__list">
-      <li class="contacts-top__item">
-        <a class="btn-anchor" href="#our-team">
-          Наша команда
-          <span class="btn-anchor__icon">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
-                fill="#2172FF"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-      <li class="contacts-top__item">
-        <a class="btn-anchor" href="#our-office">
-          Наш офис
-          <span class="btn-anchor__icon">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.41 8.57999L12 13.17L16.59 8.57999L18 9.99999L12 16L6 9.99999L7.41 8.57999Z"
-                fill="#2172FF"
-              />
-            </svg>
-          </span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
+        
         <section class="team" id="our-team">
   <div class="container">
     <h2 class="visually-hidden">Наша команда</h2>
@@ -634,7 +610,7 @@
         <ul class="team-tabs__list">
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/1.webp" type="image/webp" />
                   <img class="image" src="img/team/1.jpg" alt="team" />
@@ -665,7 +641,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/2.webp" type="image/webp" />
                   <img class="image" src="img/team/2.jpg" alt="team" />
@@ -698,7 +674,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/3.webp" type="image/webp" />
                   <img class="image" src="img/team/3.jpg" alt="team" />
@@ -732,7 +708,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/4.webp" type="image/webp" />
                   <img class="image" src="img/team/4.jpg" alt="team" />
@@ -766,7 +742,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/5.webp" type="image/webp" />
                   <img class="image" src="img/team/5.jpg" alt="team" />
@@ -800,7 +776,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/6.webp" type="image/webp" />
                   <img class="image" src="img/team/6.jpg" alt="team" />
@@ -834,7 +810,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/7.webp" type="image/webp" />
                   <img class="image" src="img/team/7.jpg" alt="team" />
@@ -868,7 +844,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/8.webp" type="image/webp" />
                   <img class="image" src="img/team/8.jpg" alt="team" />
@@ -901,7 +877,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/9.webp" type="image/webp" />
                   <img class="image" src="img/team/9jpg" alt="team" />
@@ -932,7 +908,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/10.webp" type="image/webp" />
                   <img class="image" src="img/team/10.jpg" alt="team" />
@@ -970,7 +946,7 @@
             </a> -->
 
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/all.webp" type="image/webp" />
                   <img class="image" src="img/team/all.jpg" alt="team" />
@@ -988,7 +964,7 @@
         <ul class="team-tabs__list">
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/1.webp" type="image/webp" />
                   <img class="image" src="img/team/1.jpg" alt="team" />
@@ -1024,7 +1000,7 @@
         <ul class="team-tabs__list">
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/2.webp" type="image/webp" />
                   <img class="image" src="img/team/2.jpg" alt="team" />
@@ -1057,7 +1033,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/3.webp" type="image/webp" />
                   <img class="image" src="img/team/3.jpg" alt="team" />
@@ -1091,7 +1067,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/4.webp" type="image/webp" />
                   <img class="image" src="img/team/4.jpg" alt="team" />
@@ -1125,7 +1101,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/5.webp" type="image/webp" />
                   <img class="image" src="img/team/5.jpg" alt="team" />
@@ -1159,7 +1135,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/6.webp" type="image/webp" />
                   <img class="image" src="img/team/6.jpg" alt="team" />
@@ -1193,7 +1169,7 @@
           </li>
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top">
                 <picture>
                   <source srcset="img/team/7.webp" type="image/webp" />
                   <img class="image" src="img/team/7.jpg" alt="team" />
@@ -1232,7 +1208,7 @@
         <ul class="team-tabs__list">
           <li class="team-tabs__item">
             <article class="team-card">
-              <a class="team-card__top" href="#">
+              <a class="team-card__top" >
                 <picture>
                   <source srcset="img/team/8.webp" type="image/webp" />
                   <img class="image" src="img/team/8.jpg" alt="team" />
