@@ -161,16 +161,18 @@ window.addEventListener('DOMContentLoaded', () => {
       direction: 'horizontal',
       watchSlidesVisibility: true,
       watchSlidesProgress: true,
-
       allowTouchMove: false,
 
       breakpoints: {
         300: {
           allowTouchMove: true,
+          slidesPerView: 2,
+          slidesPerGroup: 2,
         },
 
         768: {
           allowTouchMove: false,
+          slidesPerView: 'auto',
         },
       },
     });
@@ -181,6 +183,11 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 1,
       speed: 300,
       effect: 'fade',
+
+      navigation: {
+        nextEl: '.slider-thumbs__nav .swiper-button-next',
+        prevEl: '.slider-thumbs__nav .swiper-button-prev',
+      },
 
       thumbs: {
         swiper: mySwiperNav,
