@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
-  //   // * ===== Mask input
-  //   $('input[type="tel"]').mask('+7 (999) 999-99-99');
+  // * ===== Mask input
+  $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
   //   // * ===== Nice Select
   //   // $('select').niceSelect();
@@ -40,24 +40,6 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   })();
-
-  // (function scrolAnchor() {
-  //   $('a').on('click', function () {
-  //     let href = $(this).attr('href');
-
-  //     $('html, body').animate(
-  //       {
-  //         scrollTop: $(href).offset().top - 120,
-  //       },
-  //       {
-  //         duration: 500, // по умолчанию «400»
-  //         easing: 'linear', // по умолчанию «swing»
-  //       }
-  //     );
-
-  //     return false;
-  //   });
-  // })();
 
   // * ===== Slider
   (function slider() {
@@ -114,6 +96,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ==== Dropdown
   document.addEventListener('click', (e) => {
     const isDropdownButton = e.target.matches('[data-dropdown-button]');
+    const headerToggle = document.querySelector('.header__toggle');
+
     if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
       return;
 
@@ -121,11 +105,14 @@ window.addEventListener('DOMContentLoaded', () => {
     if (isDropdownButton) {
       currentDropdown = e.target.closest('[data-dropdown]');
       currentDropdown.classList.toggle('active');
+      headerToggle.classList.toggle('toggleZIndex');
     }
 
     document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
       if (dropdown === currentDropdown) return;
+
       dropdown.classList.remove('active');
+      headerToggle.classList.remove('toggleZIndex');
     });
   });
 
@@ -382,4 +369,35 @@ window.addEventListener('DOMContentLoaded', () => {
     'active'
   );
   someTabs('.asm-screen', '.asm-screen-btn', '.asm-screen-content', 'active');
+ 
+  someTabs(
+    '.navtelecom-table-tabs',
+    '.navtelecom-table-tabs-btn',
+    '.navtelecom-table-tabs-content',
+    'active'
+  );
+  someTabs(
+    '.scout-table-tabs',
+    '.scout-table-tabs-btn',
+    '.scout-table-tabs-content',
+    'active'
+  );
+  someTabs(
+    '.omnicomm-table-tabs',
+    '.omnicomm-table-tabs-btn',
+    '.omnicomm-table-tabs-content',
+    'active'
+  );
+  someTabs(
+    '.fort-table-tabs',
+    '.fort-table-tabs-btn',
+    '.fort-table-tabs-content',
+    'active'
+  );
+  someTabs(
+    '.galileosky-table-tabs',
+    '.galileosky-table-tabs-btn',
+    '.galileosky-table-tabs-content',
+    'active'
+  );
 });
