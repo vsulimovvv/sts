@@ -369,7 +369,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'active'
   );
   someTabs('.asm-screen', '.asm-screen-btn', '.asm-screen-content', 'active');
- 
+
   someTabs(
     '.navtelecom-table-tabs',
     '.navtelecom-table-tabs-btn',
