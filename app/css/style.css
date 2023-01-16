@@ -67,10 +67,6 @@ cite {
   font-style: normal;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 button {
   padding: 0;
   border: none;
@@ -2666,11 +2662,20 @@ body.no-scroll {
 }
 .contacts__text {
   font-size: 14px;
+  font-size: 21px;
 }
 @media (max-width: 1270px) {
   .contacts__text {
     font-size: calc(
         12px + 2 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .contacts__text {
+    font-size: calc(
+        15px + 6 *
           ((100vw - 360px) / 910)
       );
   }
