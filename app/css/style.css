@@ -9013,6 +9013,9 @@ body.no-scroll {
       );
   }
 }
+.legal-section__text a {
+  color: var(--color-accent);
+}
 
 .certificates-slider {
   padding-top: 80px;
