@@ -829,11 +829,20 @@ body.no-scroll {
 }
 .computer__text {
   margin-bottom: 40px;
+  font-size: 17px;
 }
 @media (max-width: 1270px) {
   .computer__text {
     margin-bottom: calc(
         30px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .computer__text {
+    font-size: calc(
+        15px + 2 *
           ((100vw - 360px) / 910)
       );
   }
