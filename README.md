@@ -21,3 +21,4 @@
 Видеонаблюдение: https://vsulimovvv.github.io/sts/app/video.html  
 Контакты: https://vsulimovvv.github.io/sts/app/contacts.html  
 Лицензии и сертификаты: https://vsulimovvv.github.io/sts/app/licenses.html  
+Компьютерная диагностика: https://vsulimovvv.github.io/sts/app/computer.html  
