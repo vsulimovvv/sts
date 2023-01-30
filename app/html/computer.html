@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+  </head>
+
+  <body>
+    @include('./components/_popups.html')
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <div class="container">
+        <div class="breadcrumbs mt">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">
+                Компьютерная диагностика
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">
+        @include('./components/_hero-computer.html')
+
+        <div class="computer">
+          <div class="container">
+            <h2 class="computer__title section-title">
+              Компьютерная диагностика грузовых автомобилей и автобусов. Диагностическое оборудование.
+            </h2>
+
+            <div class="computer__text">
+              <p>
+                Мы работаем с Сканматик 2 PRO, Delphi — профессиональными
+                мультимарочными автосканерами, предназначенные для диагностики
+                электронных систем управления современных грузовых и
+                коммерческих автомобилей, автобусов, европейского и российского
+                производства.
+              </p>
+              <p>
+                Можем выполнять работы по диагностике и коррекции ПО на
+                автомобилях КАМАЗ, ГАЗ, МАЗ, ПАЗ, УРАЛ - Scanmatik 2PRO. По
+                автомобилям MAN, Volvo, Renault и др. грузовым автомобилям и
+                автобусам диагностка с помощью программного обеспечения 2022
+                года Delphi.
+              </p>
+              <p>
+                Перечень основных работ: удаление ошибок, активации, калибровки
+                исполнительных механизмов и узлов, баланс форсунок, сброс ТО.
+              </p>
+              <p>Выполняем работы по ремонту электрики на ТС.</p>
+            </div>
+
+            <picture>
+              <source srcset="img/computer-img.webp" type="image/webp" />
+              <img class="computer__img" src="img/computer-img.png" alt="img" />
+            </picture>
+          </div>
+        </div>
+        <!-- @include('./components/_construction.html')
+        @include('./components/_heaters-types.html')
+        @include('./components/_vehicle-types.html') -->
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

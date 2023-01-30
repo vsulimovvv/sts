@@ -179,9 +179,9 @@
         <a class="mobile-menu__link" href="#"><span>Видеонаблюдение</span></a>
       </li>
       <li class="mobile-menu__item">
-        <a class="mobile-menu__link" href="#"
-          ><span>Автономные подогреватели</span></a
-        >
+        <a class="mobile-menu__link" href="#">
+          <span>Дополнительные услуги </span>
+        </a>
       </li>
       <li class="mobile-menu__item">
         <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
@@ -195,7 +195,6 @@
     </div>
   </div>
   <!-- Mobile Menu -->
-
 
   <div class="header__top">
     <div class="container">
@@ -334,9 +333,13 @@
             <a class="menu__link" href="video.html">Видеонаблюдение</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link" href="heaters.html"
-              >Автономные подогреватели</a
+            <a
+              class="menu__link menu__link--dropdown"
+              href="#"
+              data-target="add-services-drop"
             >
+              Дополнительные услуги
+            </a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="contacts.html">Контакты</a>
@@ -405,6 +408,34 @@
             </picture>
           </span>
           <span class="dropmenu__text">Документация и ПО</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Дополнительные услуги -->
+  <div class="dropmenu dropmenu--add-services" data-target="add-services-drop">
+    <ul class="dropmenu__list">
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="heaters.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/heaters/1.webp" type="image/webp" />
+              <img src="img/heaters/1.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Автономные подогреватели </span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="computer.html">
+          <span class="dropmenu__img dropmenu__img--border-none">
+            <picture>
+              <source srcset="img/dropmenu-glonass/7.webp" type="image/webp" />
+              <img src="img/dropmenu-glonass/7.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Компьютерная диагностика</span>
         </a>
       </li>
     </ul>
@@ -497,7 +528,7 @@
             </a>
           </li>
           <li class="dropmenu__item">
-            <a class="dropmenu__link" href="legal.html">
+            <a class="dropmenu__link" href="#">
               <picture>
                 <source
                   srcset="img/dropmenu-glonass/6.webp"
@@ -539,8 +570,6 @@
       </div>
     </div>
   </div>
-
-
 </header>
 
 
@@ -647,10 +676,10 @@
   <div class="tachographs-top__text">
     <div class="container">
       <p>
-        На ТС, которые эксплуатируются на территории России, устанавливаются
-        только тахографы с модулем СКЗИ (средство криптографической защиты
-        информации). Основная функция которого – сбор, шифрование и хранение
-        информации.
+        На транспортных средствах, которые эксплуатируются на территории России,
+        устанавливаются только тахографы с модулем СКЗИ (средство
+        криптографической защиты информации). Основная функция которого – сбор,
+        шифрование и хранение информации.
       </p>
       <p>
         Установка тахографа позволит вести запись различных сведений –
