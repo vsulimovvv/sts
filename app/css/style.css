@@ -11747,6 +11747,7 @@ body.no-scroll {
   color: #23262d;
 }
 .uveos-mounting {
+  background-color: var(--color-white);
   padding-top: 70px;
   padding-bottom: 70px;
 }
