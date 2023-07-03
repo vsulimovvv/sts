@@ -11295,7 +11295,7 @@ body.no-scroll {
 }
 .cities__img .circle.zapolyarnyy {
   top: 12%;
-  left: 14%;
+  left: 16%;
 }
 .cities__img .circle.zapolyarnyy .map-box {
   left: initial;
@@ -11319,7 +11319,7 @@ body.no-scroll {
   z-index: -1;
 }
 .cities__img .circle.korzunovo {
-  top: 14%;
+  top: 18%;
   left: 18%;
 }
 .cities__img .circle.korzunovo .map-box {
@@ -11345,7 +11345,7 @@ body.no-scroll {
 }
 .cities__img .circle.pechenga {
   top: 10%;
-  left: 20%;
+  left: 23%;
 }
 .cities__img .circle.pechenga .map-box {
   left: initial;
@@ -11370,11 +11370,11 @@ body.no-scroll {
 }
 .cities__img .circle.zaozersk {
   top: 13%;
-  left: 30%;
+  left: 29%;
 }
 .cities__img .circle.vidyaevo {
-  top: 15%;
-  left: 31%;
+  top: 17%;
+  left: 32%;
 }
 .cities__img .circle.snezhnogorsk {
   top: 20%;
@@ -11385,11 +11385,11 @@ body.no-scroll {
   left: 36%;
 }
 .cities__img .circle.severomorsk {
-  top: 22%;
-  left: 37%;
+  top: 28%;
+  left: 39%;
 }
 .cities__img .circle.murmansk {
-  top: 24%;
+  top: 26%;
   left: 34%;
 }
 .cities__img .circle.tuloma {
@@ -11397,11 +11397,11 @@ body.no-scroll {
   left: 28%;
 }
 .cities__img .circle.murmashi {
-  top: 29%;
-  left: 32%;
+  top: 31%;
+  left: 31%;
 }
 .cities__img .circle.zversovkhoz {
-  top: 30%;
+  top: 32%;
   left: 35%;
 }
 .cities__img .circle.verkhnetulomsky {
@@ -11429,7 +11429,7 @@ body.no-scroll {
   left: 32%;
 }
 .cities__img .circle.kirovsk {
-  top: 58%;
+  top: 57%;
   left: 39%;
 }
 .cities__img .circle.apatity {
@@ -11437,8 +11437,8 @@ body.no-scroll {
   left: 37%;
 }
 .cities__img .circle.polyarnye-zori {
-  top: 66%;
-  left: 30%;
+  top: 67%;
+  left: 31%;
 }
 .cities__img .circle.kandalaksha {
   top: 69%;
@@ -11503,8 +11503,8 @@ body.no-scroll {
   left: 45%;
 }
 .cities__img .circle.ostrovnoy {
-  top: 49%;
-  left: 84%;
+  top: 47%;
+  left: 80%;
 }
 .cities__img .circle.outside {
   top: 91%;
