@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+<link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- simplebar -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.9/simplebar.css"
+/>
+
+<!-- fancybox -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.css" />
+
+<title>СТС</title>
+
+  </head>
+
+  <body>
+    <div class="popup popup--back-call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Оставить заявку</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-name">Имя</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-name"
+            type="text"
+            placeholder="Введите ваше имя"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-email">E-mail</label>
+
+          <input
+            class="form-submit__input"
+            name="name"
+            id="online-email"
+            type="email"
+            placeholder="Введите ваш e-mail"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-tel">
+            Контактный телефон
+          </label>
+
+          <input
+            class="form-submit__input"
+            name="tel"
+            id="online-tel"
+            type="tel"
+            placeholder="+7 (___) ___-__-__"
+            required
+          />
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="online-mes"> Сообщение </label>
+
+          <textarea
+            class="form-submit__input"
+            placeholder="Напишите свой вопрос"
+            id="online-mes"
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-submit__group">
+          <label class="form-submit__checkbox checkbox">
+            <input class="checkbox__input" type="checkbox" required />
+            <span class="checkbox__box"></span>
+            <span class="checkbox__text">
+              Я согласен на обработку персональных данных
+              <a href="#">Политика конфиденциальности </a>
+            </span>
+          </label>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Оставить заявку
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <div class="mobile-menu__top">
+      <a class="mobile-menu__logo logo" href="index.html">
+        <img src="img/logo.png" alt="логотип" />
+      </a>
+      <button
+        class="mobile-menu__close"
+        type="button"
+        aria-label="Закрыть меню"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6 6L18 18"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M18 6L6 18"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>О компании</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Тахографы</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>ГЛОНАСС</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Видеонаблюдение</span></a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#">
+          <span>Дополнительные услуги </span>
+        </a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="mobile-menu__link" href="#"><span>Контакты</span></a>
+      </li>
+    </ul>
+
+    <div class="mobile-menu__btns">
+      <a class="mobile-menu__phone" href="tel:+78152701960">
+        +7 (8152) 70-19-60
+      </a>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header-btns">
+          <span class="header-btns__name">Войти в систему мониторинга:</span>
+          <ul class="header-btns__list">
+            <li class="header-btns__item">
+              <button class="header-btns__btn">Wialon</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">СКАУТ</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">Fort-monitor</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">Omnicomm</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">АСМ ГЛОНАСС</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">Трансфлоу</button>
+            </li>
+            <li class="header-btns__item">
+              <button class="header-btns__btn">СМУТ</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="dropdown" data-dropdown>
+          <button class="header-drop" data-dropdown-button>
+            Войти в систему <br />
+            мониторинга
+          </button>
+
+          <ul class="dropdown-menu">
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">Wialon</button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">СКАУТ</button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">
+                Fort-monitor
+              </button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">
+                Omnicomm
+              </button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">
+                АСМ ГЛОНАСС
+              </button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">
+                Трансфлоу
+              </button>
+            </li>
+            <li class="dropdown-menu__item">
+              <button class="dropdown-menu__link" type="button">СМУТ</button>
+            </li>
+          </ul>
+        </div>
+        <!-- <a class="header__phone" href="tel:+78152701960"> +7 (8152) 70-19-60</a> -->
+        <span class="header__phone"> +7 (8152) 70-19-60</span>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="header__bottom">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+
+      <a class="logo header__logo" href="index.html">
+        <svg
+          width="203"
+          height="93"
+          viewBox="0 0 203 93"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 65.9455C15.5763 83.8583 60.3582 90.9325 80.8022 92.2306C66.5239 86.3894 42.8349 74.7072 35.0467 65.9455C71.067 29.9253 114.875 12.4019 145.054 0.719696C118.769 5.5873 30.1791 29.9253 0 65.9455Z"
+            fill="white"
+          />
+          <path
+            d="M46.729 64.972C62.3053 81.3271 90.2128 89.959 102.22 92.2306C96.3785 90.2835 63.2788 75.6807 55.4906 64.972C86.6433 32.8459 125.584 16.296 165.498 0.719696C125.584 9.48138 72.0405 35.7664 46.729 64.972Z"
+            fill="white"
+          />
+          <path
+            d="M147.994 46.4659L140.273 72.7154C139.501 75.8265 140.273 76.6043 142.203 76.6043H147.994C150.311 76.6043 150.89 75.6321 151.855 72.7154L158.611 46.4659H170.193C171.737 41.0216 172.123 39.6605 165.367 39.6605H142.203C138.343 39.6605 137.378 40.6327 136.412 46.4659H147.994Z"
+            fill="white"
+          />
+          <path
+            d="M120.005 76.6043C124.831 76.6043 125.796 74.6599 126.761 69.7988H113.249C109.388 69.7988 109.066 67.2063 109.388 65.91C110.353 61.3731 112.235 53.4658 113.007 50.3547C113.779 47.2437 117.19 46.4659 118.798 46.4659H132.311C133.855 41.7993 132.311 39.6605 128.691 39.6605H112.283C106.879 39.6605 104.626 41.6049 103.597 45.4937C102.31 50.3547 99.3503 61.8268 97.806 68.8266C96.2618 75.8265 98.7712 76.6043 103.597 76.6043H120.005Z"
+            fill="white"
+          />
+          <path
+            d="M190.098 76.6043C194.924 76.6043 195.889 74.6599 196.854 69.7988H183.342C179.481 69.7988 179.16 67.2063 179.481 65.91C180.447 61.3731 182.329 53.4658 183.101 50.3547C183.873 47.2437 187.283 46.4659 188.892 46.4659H202.404C203.948 41.7993 202.404 39.6605 198.785 39.6605H182.377C176.972 39.6605 174.72 41.6049 173.69 45.4937C172.404 50.3547 169.444 61.8268 167.899 68.8266C166.355 75.8265 168.865 76.6043 173.69 76.6043H190.098Z"
+            fill="white"
+          />
+        </svg>
+      </a>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a class="menu__link" href="about.html">О компании</a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link menu__link--dropdown link-tachographs"
+              href="tachographs.html"
+              data-target="tachographs-drop"
+            >
+              Тахографы
+            </a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link menu__link--dropdown"
+              href="glonass.html"
+              data-target="glonass-drop"
+            >
+              ГЛОНАСС
+            </a>
+          </li>
+
+          <li class="menu__item">
+            <a class="menu__link" href="video.html">Видеонаблюдение</a>
+          </li>
+          <li class="menu__item">
+            <a
+              class="menu__link menu__link--dropdown"
+              href="#"
+              data-target="add-services-drop"
+            >
+              Дополнительные услуги
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="header__btn btn back-call-btn" type="button">
+        Отправить заявку
+      </button>
+    </div>
+  </div>
+
+  <!-- Dropdown -->
+  <div class="dropmenu" data-target="tachographs-drop">
+    <ul class="dropmenu__list">
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="ru-tachographs.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropdown/1.webp" type="image/webp" />
+              <img src="img/dropdown/1.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Российские тахографы</span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="e-tachographs.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropdown/2.webp" type="image/webp" />
+              <img src="img/dropdown/2.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Европейские тахографы</span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="tachograph-cards.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropdown/3.webp" type="image/webp" />
+              <img src="img/dropdown/3.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Карты для тахографа</span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="legal.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropdown/4.webp" type="image/webp" />
+              <img src="img/dropdown/4.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Законодательство</span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="docs-tachograph.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropdown/5.webp" type="image/webp" />
+              <img src="img/dropdown/5.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Документация и ПО</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Дополнительные услуги -->
+  <div class="dropmenu dropmenu--add-services" data-target="add-services-drop">
+    <ul class="dropmenu__list">
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="heaters.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/heaters/1.webp" type="image/webp" />
+              <img src="img/heaters/1.png" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Автономные подогреватели </span>
+        </a>
+      </li>
+      <li class="dropmenu__item">
+        <a class="dropmenu__link" href="computer.html">
+          <span class="dropmenu__img">
+            <picture>
+              <source srcset="img/dropmenu-glonass/8.webp" type="image/webp" />
+              <img src="img/dropmenu-glonass/8.jpg" alt="img" />
+            </picture>
+          </span>
+          <span class="dropmenu__text">Компьютерная диагностика</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="dropmenu dropmenu--glonass" data-target="glonass-drop">
+    <div class="dropmenu__cols">
+      <div class="dropmenu__col">
+        <div class="dropmenu__img">
+          <picture>
+            <source srcset="img/dropmenu-glonass/1.webp" type="image/webp" />
+            <img src="img/dropmenu-glonass/1.jpg" alt="img" />
+          </picture>
+        </div>
+        <ul class="dropmenu__list">
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="solutions.html">
+              <b>Основные направления</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#"> Контроль местоположения </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#"> Контроль топлива </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#"> Контроль температуры</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Контроль давления в шинах </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#"> Контроль пассажиропотока</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Контроль водителей </a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropmenu__col">
+        <div class="dropmenu__img">
+          <picture>
+            <source srcset="img/dropmenu-glonass/2.webp" type="image/webp" />
+            <img src="img/dropmenu-glonass/2.jpg" alt="img" />
+          </picture>
+        </div>
+        <ul class="dropmenu__list">
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="descr-duration.html">
+              <b>Отраслевые решения</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Грузоперевозки</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Пассажироперевозки</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Спецтехника</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Стационарные объекты</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Легковой транспорт</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Персональный мониторинг</a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">Маломерные суда</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropmenu__col dropmenu__col--right">
+        <ul class="dropmenu__list">
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="era.html">
+              <picture>
+                <source
+                  srcset="img/dropmenu-glonass/3.webp"
+                  type="image/webp"
+                />
+                <img src="img/dropmenu-glonass/3.jpg" alt="img" />
+              </picture>
+
+              <b>ЭРА ГЛОНАСС (ПП№2216)</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="#">
+              <picture>
+                <source
+                  srcset="img/dropmenu-glonass/6.webp"
+                  type="image/webp"
+                />
+                <img src="img/dropmenu-glonass/6.jpg" alt="img" />
+              </picture>
+
+              <b>Онлайн-табло</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="software.html">
+              <picture>
+                <source
+                  srcset="img/dropmenu-glonass/4.webp"
+                  type="image/webp"
+                />
+                <img src="img/dropmenu-glonass/4.jpg" alt="img" />
+              </picture>
+
+              <b>Програмное обеспечение</b>
+            </a>
+          </li>
+          <li class="dropmenu__item">
+            <a class="dropmenu__link" href="legal.html">
+              <picture>
+                <source
+                  srcset="img/dropmenu-glonass/5.webp"
+                  type="image/webp"
+                />
+                <img src="img/dropmenu-glonass/5.jpg" alt="img" />
+              </picture>
+
+              <b>Законодательство</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="container">
+        <div class="breadcrumbs mt">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link breadcrumbs__link--active">
+                Реализация постановления Правительства РФ от 12.05.2022 № 855
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <main class="main">
+        <section
+  class="hero hero--small hero--uveos"
+  style="background-image: url('img/hero/uveos.jpg')"
+>
+  <div class="container">
+    <div class="hero__wrapper">
+      <div class="hero__offer">
+        <h1 class="hero__title">
+          Реализация постановления <br />
+          Правительства РФ от 12.05.2022 № 855
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <div class="uveos-text">
+          <div class="container">
+            <p>
+              Согласно Правилам, с 1 октября 2022 г. юридическим лицам и
+              индивидуальным предпринимателям при ввозе транспортных средств на
+              территорию Российской Федерации необходимо приобрести и установить
+              устройство вызова экстренных оперативных служб (далее - УВЭОС).
+            </p>
+          </div>
+        </div>
+        <section class="uveos-about">
+          <div class="container">
+            <h2 class="uveos-about__title">Что такое УВЭОС</h2>
+            <p class="uveos-about__text">
+              УВЭОС (СВЭС) — Система Вызова Экстренных Служб. Как следует из
+              названия, УВЭОС устанавливается на авто для вызова служб на место
+              чрезвычайного происшествия, которое произошло с автомобильным
+              транспортом. Устройство мгновенно передает информацию в скорую
+              помощь, пожарную службу и автоинспекцию, в которой содержатся
+              данные автомобиля (модель, VIN номер) и координаты расположения
+              транспортного средства.
+            </p>
+          </div>
+        </section>
+
+        <section class="uveos-mounting">
+          <div class="container">
+            <h2 class="uveos-mounting__title">
+              Когда не обойтись без монтажа кнопки УВЭОС:
+            </h2>
+            <ul class="uveos-mounting__list">
+              <li class="uveos-mounting__item">
+                При ввозе нового транспортного средства в Россию или страну ТС,
+                произведенного в любом государстве. При этом кнопку ЭРА-ГЛОНАСС
+                монтирует производитель.
+              </li>
+              <li class="uveos-mounting__item">
+                При транспортировке в РФ авто, которые были собраны в
+                государствах-участниках ТС.
+              </li>
+              <li class="uveos-mounting__item">
+                В случае завоза в Россию подержанных транспортных средств из
+                государств, не входящих в Таможенный Союз. При этом важно, чтобы
+                автомобиль не был старше 30-ти лет.
+              </li>
+            </ul>
+            <p>
+              На подержанные авто, которые были проданы до начала 2017 года,
+              устройство монтируется по желанию собственника.
+            </p>
+          </div>
+        </section>
+
+        <section class="uveos-official">
+          <div class="container">
+            <div class="uveos-official__wrapper">
+              <div class="uveos-official__left">
+                <h2 class="uveos-official__title">
+                  Мы являемся <span>официальным партнером АО «ГЛОНАСС»</span>
+                  <br />
+                  по реализации УВЭОС и мастерской по его установке, настройке и
+                  активации
+                </h2>
+                <ul class="uveos-official__list">
+                  <li class="uveos-official__item">
+                    Продаем и устанавливаем кнопки УВЭОС
+                  </li>
+                  <li class="uveos-official__item">
+                    Активируем и идентифицируем их в ГАИС ЭРА-ГЛОНАСС
+                  </li>
+                  <li class="uveos-official__item">
+                    Проверяем работоспособность установленного оборудования
+                  </li>
+                </ul>
+                <div class="uveos-official__text">
+                  <p>
+                    После успешной регистрации УВЭОС, сим чип получает
+                    уникальный номер ICCID. В дальнейшем этот код указывается в
+                    разделе «Особые отметки» ПТС, а также в СБКТС (свидетельство
+                    о безопасности конструкции транспортного средства).
+                  </p>
+                  <p>
+                    УВЭОС на автомобиле распознается в системе и включается в
+                    общую базу зарегистрированных приборов, сигналы с которых
+                    будут обрабатываться диспетчерским центром.
+                  </p>
+                </div>
+              </div>
+              <div class="uveos-official__img">
+                <img src="img/uveos-img.jpg" alt="img" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer footer--border-top">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__left">
+        <a class="footer__logo logo" href="#">
+          <img src="img/logo-dark.png" alt="Логотип" />
+        </a>
+        <!-- <a class="footer__phone" href="tel:+78152701960">
+          <span>+7 (8152)</span> 70-19-60
+        </a> -->
+        <span class="footer__phone"> +7 (8152) 70-19-60 </span>
+      </div>
+      <div class="footer__right">
+        <div class="footer__col">
+          <span class="footer__name">Информация для пользователей</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Политика конфиденциальности </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Карта сайта </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">Направления</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="tachographs.html">Тахографы </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="glonass.html">ГЛОНАСС </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="video.html">Видеонаблюдение </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="heaters.html">Автономные отопители </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__name">О компании</span>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="about.html">О нас </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="licenses.html"
+                >Лицензии и сертификаты
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="footer__bottom-inner">
+        <div class="footer__copy">Copyright © 1998-2022</div>
+
+        <a class="company" href="https://razrabotka-saita.ru/" target="_blank">
+          <span>Разработка сайта</span>
+          <img src="img/logo-company.png" alt="АдвансМедиа" />
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- simplebar -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplebar/5.3.9/simplebar.min.js"></script>
+
+<!-- fancybox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

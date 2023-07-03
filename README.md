@@ -22,3 +22,5 @@
 Контакты: https://vsulimovvv.github.io/sts/app/contacts.html  
 Лицензии и сертификаты: https://vsulimovvv.github.io/sts/app/licenses.html  
 Компьютерная диагностика: https://vsulimovvv.github.io/sts/app/computer.html  
+
+Реализация постановления: https://vsulimovvv.github.io/sts/app/uveos.html  

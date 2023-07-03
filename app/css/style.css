@@ -2134,6 +2134,9 @@ body.no-scroll {
 .hero--w-620 .hero__offer {
   max-width: 620px;
 }
+.hero--uveos .hero__offer {
+  max-width: 820px;
+}
 .hero__title {
   line-height: 1.25;
   font-weight: 700;
@@ -11680,4 +11683,292 @@ body.no-scroll {
 }
 .contacts-top__text p:not(:last-child) {
   margin-bottom: 20px;
+}
+
+.uveos-text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+  padding: 50px 0;
+  background-color: var(--color-white);
+}
+.uveos-about {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1270px) {
+  .uveos-about {
+    padding-top: calc(
+        40px + 30 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-about {
+    padding-bottom: calc(
+        40px + 30 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-about__title {
+  font-family: "Inter";
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--color-black);
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+@media (max-width: 1270px) {
+  .uveos-about__title {
+    font-size: calc(
+        22px + 8 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .uveos-about__title {
+    text-align: center;
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-about__title {
+    margin-bottom: calc(
+        25px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-about__text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+}
+.uveos-mounting {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+@media (max-width: 1270px) {
+  .uveos-mounting {
+    padding-top: calc(
+        40px + 30 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-mounting {
+    padding-bottom: calc(
+        40px + 30 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-mounting__title {
+  font-family: "Inter";
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--color-black);
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+@media (max-width: 1270px) {
+  .uveos-mounting__title {
+    font-size: calc(
+        22px + 8 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .uveos-mounting__title {
+    text-align: center;
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-mounting__title {
+    margin-bottom: calc(
+        25px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-mounting__list {
+  max-width: 870px;
+  margin-bottom: 50px;
+}
+@media (max-width: 1270px) {
+  .uveos-mounting__list {
+    margin-bottom: calc(
+        40px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-mounting__item {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+  position: relative;
+  padding-left: 26px;
+}
+.uveos-mounting__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.uveos-mounting__item::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 0;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.uveos-mounting__text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+}
+.uveos-official {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+@media (max-width: 1270px) {
+  .uveos-official {
+    padding-top: calc(
+        50px + 50 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-official {
+    padding-bottom: calc(
+        50px + 50 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-official__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+@media (max-width: 991.98px) {
+  .uveos-official__wrapper {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+.uveos-official__img {
+  max-width: 620px;
+  width: 100%;
+  height: 620px;
+}
+@media (max-width: 991.98px) {
+  .uveos-official__img {
+    height: 620px;
+  }
+}
+@media (max-width: 991.98px) and (max-width: 1270px) {
+  .uveos-official__img {
+    height: calc(
+        300px + 320 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-official__img img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.uveos-official__title {
+  font-family: "Inter";
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--color-black);
+  font-size: 30px;
+  margin-bottom: 45px;
+}
+@media (max-width: 1270px) {
+  .uveos-official__title {
+    font-size: calc(
+        22px + 8 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .uveos-official__title {
+    text-align: center;
+  }
+}
+@media (max-width: 1270px) {
+  .uveos-official__title {
+    margin-bottom: calc(
+        30px + 15 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+.uveos-official__title span {
+  color: var(--color-accent);
+}
+.uveos-official__list {
+  padding-left: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1270px) {
+  .uveos-official__list {
+    margin-bottom: calc(
+        30px + 10 *
+          ((100vw - 360px) / 910)
+      );
+  }
+}
+@media (max-width: 991.98px) {
+  .uveos-official__list {
+    padding-left: 0;
+  }
+}
+.uveos-official__item {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+  position: relative;
+  padding-left: 26px;
+}
+.uveos-official__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+.uveos-official__item::after {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  top: 4px;
+  left: 0;
+  background-image: url("../img/check.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.uveos-official__text {
+  font-size: 17px;
+  font-weight: 400;
+  color: #23262d;
+}
+.uveos-official__text p:not(:last-child) {
+  margin-bottom: 30px;
 }
